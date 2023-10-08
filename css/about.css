@@ -1,0 +1,222 @@
+body {
+	margin: 0;
+	background: linear-gradient(45deg, rgba(255, 255, 255, 0.1) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.1) 50%, rgba(255, 255, 255, 0.1) 75%, transparent 75%, transparent),
+	linear-gradient(135deg, rgb(63, 63, 63) 25%, transparent 25%, transparent 50%, rgb(7, 7, 7) 50%, rgb(15, 15, 15) 75%, transparent 75%, transparent),
+linear-gradient(to bottom, #656565, #2f2f2f);
+background-blend-mode: overlay;
+background-size: 200% 200%, 200% 200%, cover; 
+background-repeat: no-repeat;
+color:white;
+height: 100%;
+font-family: 'Rajdhani', sans-serif;
+
+}
+
+img {
+	max-width: 365px;
+	width: 365px;
+  border-radius:20px; 
+}
+
+.date-container{
+margin-top: 5em;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items:center;
+}
+
+.date-container::before {
+  content: "";
+  top: 0;
+  left: 0;
+  width:80vw;
+  height: 50vh; 
+  background-image: url(/IMG/25956674-359a-4dd5-b3cc-e62072596885.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  filter: brightness(50%); /* Adjust the brightness value to make it darker or lighter */
+  z-index: -1;
+  box-shadow: 0px 0px 20px rgba(102, 25, 128, 0.9);
+	border-radius:20px;
+}
+
+.infodates {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items:center;
+  position: relative;
+  bottom:16em;
+  height: 3vh;
+  padding: 0;
+}
+
+.join-now{
+  width: 130px;
+  height: 70px;
+  border-radius:20px;
+  border:none;
+  background-color:rgb(255, 255, 255);
+  color:#2f2f2f;
+  box-shadow: 0px 0px 20px rgba(102, 25, 128, 0.9);
+  position: relative;
+  bottom: 6em;
+  font-size: 1.5em;
+}
+
+.join-now:hover {
+  background-color:rgba(59, 59, 59, 0.511);
+  color:#fff;
+  cursor: pointer;
+  border:2px solid white;
+}
+
+
+.our-speackers h1{
+font-size: 1.5em;
+}
+
+.our-speackers img {
+  border-radius: 10px;
+  box-shadow: 0px 0px 20px rgba(102, 25, 128, 0.9);
+  max-width: 375px; 
+  height: auto; 
+}
+
+.our-speackers img:hover{
+  cursor: pointer;
+  border-radius: 10px;
+  box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.9);
+  height: 375px; 
+  width:385px; 
+
+}
+.about-conference {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+}
+.conference-container {
+  margin-top: 0;
+  margin-left: 2em;
+  display: inline-block;
+  width: 800px;
+	padding: 3em;
+  font-size: 1em;
+	background-color:#00000058;
+	box-shadow: 0px 0px 20px rgba(102, 25, 128, 0.9);
+	/* border-radius:20px; */
+  
+}
+.conference-container h1 {
+  text-align: center;
+  padding: 0;
+}
+
+.company-description {
+  display: flex;
+  flex-direction: row;
+  margin: 4em;  
+}
+
+.about-tree {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+	margin: 3em;
+	width: auto;
+	padding: 3em;
+  font-size: 1em;
+	align-items:center;
+	background-color:#00000058;
+	box-shadow: 0px 0px 20px rgba(102, 25, 128, 0.9);
+	/* border-radius:20px; */
+}
+
+.newsletter {
+  background-color:#2424248a;
+  width: 700px;
+  padding: 40px;
+  text-align: center;
+  box-shadow: 0px 0px 20px rgba(102, 25, 128, 0.9);
+  box-sizing: border-box;
+  margin-left: 19em;
+  margin-bottom: 4em;
+}
+
+h1 {
+	text-transform: uppercase;
+    color: #fff;
+    font-size: 38px;
+    line-height: 40px;
+}
+
+  p {
+    color: #fff;
+    font-size: 1.5em;
+    white-space: pre-line;
+  }
+
+.text {
+  width: 100%;
+  height: 70px;
+  background-color: #f1f1f199;
+  border-radius: 40px;
+  position: relative;
+  margin-top: 40px;
+}
+
+  input {
+    width: 100%;
+    height: 70px;
+    border-radius: 40px;
+    border: 0;
+    background: none;
+    padding: 0 30px;
+    outline: none;
+    font-size: 15px;
+    
+  }
+  
+  .btn {
+    background-color:rgba(231, 231, 231, 0.9);
+    border: 0;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    outline: none;
+    cursor: pointer;
+    color: #fff;
+    transition: .3s linear;
+  }
+
+  .btn:hover {
+    background-color:rgba(44, 44, 44, 0.9);
+  }
+  
+  @media (max-width:700px) {
+	.company-description {
+		display: flex;
+		flex-direction: column;
+		grid-template-columns: 1fr;
+		padding: 2% 3%;
+		margin-left: 1em;
+		margin-right: 1em;
+	}
+
+	img {
+		max-width: 375px;
+		min-width: 375px;
+	}
+
+  .our-speackers, .food-menu-link {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+  }
+  }

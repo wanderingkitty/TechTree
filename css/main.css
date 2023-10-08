@@ -1,0 +1,216 @@
+body {
+	margin: 0;
+    padding: 0;
+	/* font-family: 'Kaisei Opti', serif; */
+	font-family: 'Rajdhani', sans-serif;
+background-size:cover; 
+min-height: 100%;
+height: 120vh;
+background-image:url(/IMG/1.jpg);
+background-repeat: no-repeat;
+background-position: center center;
+}
+
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 120vh;
+    background-color: rgba(0, 0, 0, 0.7); /* Adjust the opacity by changing the alpha value (0.5 for 50% opacity) */
+    z-index: -1;
+}
+
+
+.intro-row {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    height: 100vh;
+    font-size: 2em;
+}
+
+.intro-row h1 {
+    font-size:3em; 
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 4); 
+	margin: 0;
+}
+
+.intro-row h2 {
+    text-align: center;
+    font-size: 1em;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 4);
+}
+
+.logo {
+	width: 50px;
+	height: 50px;
+}
+
+.arrow-button {
+	display: inline-block;
+	justify-content: center;
+	align-items:center;
+	padding: 10px 20px 5px;
+	background-color:rgba(255, 255, 255, 0);
+	width: 20px;
+	text-decoration: none;
+	border-radius: 5px; 
+	transition: background-color 0.3s; 
+  }
+  
+  .arrow-button:hover {
+	background-color: rgba(255, 255, 255, 0.248); 
+  }
+  
+  .arrow-down:hover{
+	border-top: 15px solid rgba(4, 4, 4, 0.703); 
+
+  }
+  
+  .arrow-down {
+	width: 0;
+	height: 0;
+	border-left: 10px solid transparent;
+	border-right: 10px solid transparent;
+	border-top: 15px solid rgb(255, 255, 255); 
+  }
+
+
+/* .intro-raw .button {
+    background-color: #ff5722;
+    color: white; 
+    padding: 10px 20px; 
+    border-radius: 5px; 
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8); 
+} */
+
+.content-page {
+margin-top: 1em;
+		background: linear-gradient(45deg, rgba(255, 255, 255, 0.1) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.1) 50%, rgba(255, 255, 255, 0.1) 75%, transparent 75%, transparent),
+	linear-gradient(135deg, rgb(255, 255, 255) 25%, transparent 25%, transparent 50%, rgb(7, 7, 7) 50%, rgb(15, 15, 15) 75%, transparent 75%, transparent),
+linear-gradient(to bottom, #000000, #2f2f2f);
+background-blend-mode: overlay;
+background-size: 200% 200%, 200% 200%, cover; 
+background-repeat: no-repeat;
+color:white;
+
+}
+
+.content-row h1 {
+	margin: 0;
+	padding: 0;
+	text-align: center;
+	font-size: 2.5em; 
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 4); 
+}
+
+.content-row h2 {
+	padding-top: 2.2em;
+	text-align: center;
+	font-size: 2em; 
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 4); 
+}
+
+.first-day-events {
+	margin: 1em auto;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items:center;
+	background-color:rgba(255, 255, 255, 0.645);
+	width: 80%;
+	border-radius:20px;
+	color:#000000;
+	font-size: 1.5em;
+	box-shadow: 0px 0px 20px rgba(102, 25, 128, 0.9);
+	
+}
+
+.first-day-events ul {
+    list-style-type: none;
+}
+
+.first-day-events li {
+   padding: 0.4em;
+}
+
+.first-day-events h3 {
+	text-align: center;
+	padding-bottom: 5px;
+	margin-top:0.2em;
+	margin-right: 10px; 
+	border-bottom: 2px solid white;
+  }
+
+.first-day-events span {
+	font-weight: bold;
+	text-decoration: underline rgba(255, 255, 255, 0.27);
+}
+
+.media-container {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	gap: 20px;
+	margin: 6em;
+
+}
+
+.media-container img {
+	width: 365px;
+	border-radius:20px;
+	box-shadow: 0px 0px 20px rgba(169, 169, 169, 0.9);
+}
+.media-title {
+    grid-column: span 3; 
+    text-align: center; 
+	font-size: 2em;
+}
+
+@media screen and (max-width: 700px) {
+ img {
+	width: 25px;
+	height: 25px;
+ }
+
+ .intro-row, .content-row {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items:center;
+	font-size: 1.2em;
+ }
+
+ h1, h2, h3 {
+	font-size: 2em;
+ }
+
+ .arrow-button {
+  width: 80px;
+  height: 60px;
+  display: flex;
+  align-items:center;
+ }
+
+ .arrow-down {
+    border-top-width: 30px;
+    border-left-width: 15px; 
+    border-right-width: 15px; 
+  }
+
+  .first-day-events {
+	display: flex;
+	flex-direction: column;
+	width: 15em;
+	font-size: 1.5em;
+  }
+
+  h3 {
+	font-size:1.4em;
+}
+
+
+}
