@@ -66,70 +66,58 @@ align-items:center;
 }
 
 .infodates{
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+margin: 4;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items:center;
   position: absolute; 
   top: 6em;
   gap: 10px;
   font-size: 1.5em;
 }
-
-.infodates h1, .infodates p{
-  position: relative;
-  left:2em;
+.main-btn {
+  display:flex;
+  gap: 10px;
 }
-
-.infodates > * {
-  grid-column: 1;
-}
-
-.form-section {
- grid-column: 2;
- display: flex;
- flex-direction: column;
-  background-color: #f2efe942;
-  border-radius:20px;
-  text-align: center; /* Center text in the form */
-  margin-bottom: 1em; 
-	margin: 1em 0;
-  padding: 1em;
-  position: relative;
-  bottom:8.5em;
-  right: 2em;
-}
-
-input[type="submit"] {
-  background-color: white;
-  color: #2f2f2f; 
-  border: none; 
-  padding: 10px 20px; /* Padding around the button text */
-  border-radius: 5px; /* Rounded corners */
-  cursor: pointer; /* Add a pointer cursor on hover */
-  transition: background-color 0.3s, color 0.3s;
-  margin-top: 1em;
-}
-
-/* Style the submit button on hover */
-input[type="submit"]:hover {
-  background-color: #2f2f2f; /* Background color */
-  color: white; /* Text color */
-}
-
 
 .join-now{
-  grid-column:1; 
+  display: block;
+  align-items:center;
+  text-align: center;
   border-radius:20px;
   border:none;
-  width: 140px;
-  height: 40px;
+  width: 180px;
+  height: 90px;
   background-color:rgb(255, 255, 255);
   color:#2f2f2f;
-  font-size: 1.5em;
-  position: relative;
-  left: 3em;
+  font-size: 1.3em;
+
+  
 }
 
 .join-now:hover {
+  background-color:rgba(59, 59, 59, 0.511);
+  color:#fff;
+  cursor: pointer;
+  border:2px solid white;
+}
+
+.join-remotely {
+  display: block;
+  align-items:center;
+  text-align: center;
+  border-radius:20px;
+  border:none;
+  width: 180px;
+  height: 90px;
+  background-color:rgb(255, 255, 255);
+  color:#2f2f2f;
+  font-size: 1.3em;
+
+}
+
+.join-remotely:hover {
   background-color:rgba(59, 59, 59, 0.511);
   color:#fff;
   cursor: pointer;
