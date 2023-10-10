@@ -3,10 +3,10 @@ body {
     padding: 0;
 	/* font-family: 'Kaisei Opti', serif; */
 	font-family: 'Rajdhani', sans-serif;
-background-size:cover; 
 min-height: 100%;
 height: 120vh;
 background-image:url(/IMG/1.jpg);
+background-size: 200% 200%, 200% 200%, cover; 
 background-repeat: no-repeat;
 background-position: center center;
 }
@@ -21,7 +21,6 @@ body::before {
     background-color: rgba(0, 0, 0, 0.7); /* Adjust the opacity by changing the alpha value (0.5 for 50% opacity) */
     z-index: -1;
 }
-
 
 .intro-row {
     color: white;
@@ -79,76 +78,46 @@ body::before {
 	border-top: 15px solid rgb(255, 255, 255); 
   }
 
-
-/* .intro-raw .button {
-    background-color: #ff5722;
-    color: white; 
-    padding: 10px 20px; 
-    border-radius: 5px; 
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8); 
-} */
-
-.content-page {
-margin-top: 1em;
-		background: linear-gradient(45deg, rgba(255, 255, 255, 0.1) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.1) 50%, rgba(255, 255, 255, 0.1) 75%, transparent 75%, transparent),
-	linear-gradient(135deg, rgb(255, 255, 255) 25%, transparent 25%, transparent 50%, rgb(7, 7, 7) 50%, rgb(15, 15, 15) 75%, transparent 75%, transparent),
-linear-gradient(to bottom, #000000, #2f2f2f);
-background-blend-mode: overlay;
-background-size: 200% 200%, 200% 200%, cover; 
-background-repeat: no-repeat;
-color:white;
-
-}
-
-.content-row h1 {
-	margin: 0;
-	padding: 0;
-	text-align: center;
-	font-size: 2.5em; 
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 4); 
-}
-
-.content-row h2 {
-	padding-top: 2.2em;
-	text-align: center;
-	font-size: 2em; 
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 4); 
-}
-
-.first-day-events {
-	margin: 1em auto;
+.about-conference {
+	margin-top: 10em;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items:center;
+	background-color:#252627;
+	color:#F2EFE9;
+
+}
+
+.conference-container {
+	margin: 4em auto;
+	padding: 2em;
 	background-color:rgba(255, 255, 255, 0.645);
 	width: 80%;
 	border-radius:20px;
 	color:#000000;
 	font-size: 1.5em;
-	box-shadow: 0px 0px 20px rgba(102, 25, 128, 0.9);
-	
+	box-shadow: 0px 0px 20px rgba(169, 169, 169, 0.9);
+	line-height: 1.5;
+
 }
 
-.first-day-events ul {
-    list-style-type: none;
+.unlock {
+	display: inline-block;
+	background-color:rgba(255, 255, 255, 0.645);
+	box-shadow: 0px 0px 20px rgba(169, 169, 169, 0.9);
+	border-radius:20px;
+    border:none;
+	padding: 1em;
+	font-size: 1.5em;
+	font-family: 'Rajdhani', sans-serif;
+
 }
 
-.first-day-events li {
-   padding: 0.4em;
-}
-
-.first-day-events h3 {
-	text-align: center;
-	padding-bottom: 5px;
-	margin-top:0.2em;
-	margin-right: 10px; 
-	border-bottom: 2px solid white;
-  }
-
-.first-day-events span {
-	font-weight: bold;
-	text-decoration: underline rgba(255, 255, 255, 0.27);
+.unlock:hover {
+	cursor: pointer;
+	background-color:#252627;
+    color:#F2EFE9;
 }
 
 .media-container {
@@ -176,12 +145,17 @@ color:white;
 	height: 25px;
  }
 
- .intro-row, .content-row {
+ .intro-row, .content-row, .media-container {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items:center;
 	font-size: 1.2em;
+ }
+
+ .media-container img {
+	width: 300px;
+	height: 300px;
  }
 
  h1, h2, h3 {
