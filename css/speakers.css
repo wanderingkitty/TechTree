@@ -35,7 +35,6 @@ hr {
 .day-one-speakers {
 	display: flex;
 	flex-direction: column;
-	justify-content: flex-start;
 	text-align: left;
 	margin: 4em;
     width: auto;
@@ -47,3 +46,29 @@ hr {
 	color:#F2EFE9;
 	box-shadow: 0px 0px 20px rgba(73, 73, 73, 0.9);
 }
+
+
+.mark, .ameca, .reed {
+    display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 1fr;
+	gap: 20px;
+    padding: 1em;
+    align-items: center;
+}
+
+.image-container {
+	grid-column: 1;
+}
+
+.image-container2 {
+	grid-column: 2;
+    margin-left: auto;
+	
+}
+
+.mark p {
+	grid-column: 1;
+	grid-row: 1;
+}
+
