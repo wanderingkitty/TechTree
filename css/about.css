@@ -18,6 +18,38 @@ hr {
 	display: block;
   }
 
+  .arrow-button {
+	display: inline-block;
+	justify-content: center;
+	align-items:center;
+	padding: 10px 20px 5px;
+	background-color:rgba(255, 255, 255, 0);
+	width: 20px;
+	text-decoration: none;
+	border-radius: 5px; 
+	transition: background-color 0.3s;
+	position: relative;
+    top: 60em;
+	right: 46em;
+  }
+  
+  .arrow-button:hover {
+	background-color: rgba(50, 50, 50, 0.976); 
+  }
+  
+  .arrow-down:hover{
+	border-top: 15px solid rgba(228, 228, 228, 0.922); 
+
+  }
+  
+  .arrow-down {
+	width: 0;
+	height: 0;
+	border-left: 10px solid transparent;
+	border-right: 10px solid transparent;
+	border-top: 15px solid rgb(39, 39, 39); 
+  }
+
 
 .company-description {
 	display: flex;
