@@ -1,0 +1,49 @@
+body {
+	margin: 0;
+	padding: 0;
+font-family: 'Rajdhani', sans-serif;
+background-color:#252627;
+}
+
+img {
+	width: 265px;
+	border-radius:20px;
+	box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.9);
+}
+
+span {
+	font-weight: bold;
+	text-decoration: underline rgba(118, 118, 118, 0.449);
+	font-size: 1.4em;
+}
+
+hr {
+	width: 60vw;
+	margin: 20px auto;
+	display: block;
+	color: #333; /* Color of the rule */
+	background-color: #817983b5; /* Background color of the rule */
+	height: 2px; /* Height or thickness of the rule */
+	border: none; /* Remove any border */
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  }
+
+.firts-speaker-container {
+	color:#F2EFE9;
+}
+
+.day-one-speakers {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	text-align: left;
+	margin: 4em;
+    width: auto;
+	padding: 3em;
+	font-size: 1.5em;
+	line-height: 40px;
+	align-items:center;
+    background-color:#252627;
+	color:#F2EFE9;
+	box-shadow: 0px 0px 20px rgba(73, 73, 73, 0.9);
+}
