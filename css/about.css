@@ -17,44 +17,10 @@ hr {
 	margin: 20px auto;
 	display: block;
   }
-
-  .arrow-button {
-	display: inline-block;
-	justify-content: center;
-	align-items:center;
-	padding: 10px 20px 5px;
-	background-color:rgba(255, 255, 255, 0);
-	width: 20px;
-	text-decoration: none;
-	border-radius: 5px; 
-	transition: background-color 0.3s;
-	position: relative;
-    top: 60em;
-	right: 46em;
-  }
-  
-  .arrow-button:hover {
-	background-color: rgba(50, 50, 50, 0.976); 
-  }
-  
-  .arrow-down:hover{
-	border-top: 15px solid rgba(228, 228, 228, 0.922); 
-
-  }
-  
-  .arrow-down {
-	width: 0;
-	height: 0;
-	border-left: 10px solid transparent;
-	border-right: 10px solid transparent;
-	border-top: 15px solid rgb(39, 39, 39); 
-  }
-
-
 .company-description {
 	display: flex;
 	flex-direction: row; 
-	margin: 1em 0 0 4em; 
+	margin: 4em 0 0 4em; 
   }
   
   .about-tree, .connection {
@@ -62,7 +28,6 @@ hr {
 	flex-direction: column;
 	justify-content: space-between;
 	text-align: left;
-	margin-top: 1em;
     width: auto;
 	padding: 3em;
 	font-size: 1.5em;
@@ -75,8 +40,9 @@ hr {
   }
 
   .connection {
-	margin-left: 2em;
+	margin-left: 4em;
 	margin-right: 2em;
+	margin-bottom: 2em;
   }
 
   .branch1, .branch2, .branch3, .branch4 {
@@ -85,14 +51,12 @@ hr {
 	align-items: center;
   }
 
- /* Add space between text and images in .about-tree */
 .about-tree img {
 	border-radius: 10px;
 	width: 360px;
-	margin-bottom: 20px; /* Add margin to create space between image and text */
+	margin-bottom: 20px; 
   }
   
-  /* Add space between text and images in .branch1, .branch2, .branch3, .branch4 */
   .branch1 img,
   .branch2 img,
   .branch3 img,
@@ -100,18 +64,20 @@ hr {
 	border-radius: 10px;
 	width: 135px;
 	height: 100px;
-	margin-right: 20px; /* Add margin to create space between image and text */
+	margin-right: 20px;
   }
   
   .newsletter {
 	background-color:#252627;
+	color:#F2EFE9;
 	width: 700px;
 	padding: 40px;
 	text-align: center;
 	box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.9);
+	box-shadow: 0px 0px 20px rgba(73, 73, 73, 0.9);
+
 	box-sizing: border-box;
-	margin-left: 19em;
-	margin-bottom: 4em;
+    margin: 2em 0 2em 29em;
   }
   
   h1 {
@@ -123,7 +89,7 @@ hr {
   .text {
 	width: 100%;
 	height: 70px;
-	background-color: #F2EFE999;
+	background-color:#f2efe9da;
 	border-radius: 40px;
 	position: relative;
 	margin-top: 40px;
@@ -144,7 +110,7 @@ hr {
 	.btn {
 	  background-color:rgba(231, 231, 231, 0.9);
 	  border: 0;
-	  width: 50px;
+	  width: 90px;
 	  height: 50px;
 	  border-radius: 50%;
 	  position: absolute;
@@ -152,11 +118,12 @@ hr {
 	  top: 10px;
 	  outline: none;
 	  cursor: pointer;
-	  color: #fff;
+	  color: #252627;
 	  transition: .3s linear;
 	}
   
 	.btn:hover {
 	  background-color:rgba(44, 44, 44, 0.9);
+	  color:#F2EFE9;
 	}
 	

@@ -1,7 +1,7 @@
 body {
 	margin: 0;
   padding: 0;
-background-color:#F2EFE9;
+  background-color:#161617;
 color:white;
 height: 100%;
 font-family: 'Rajdhani', sans-serif;
@@ -28,11 +28,11 @@ img{
   }
   
   .arrow-button:hover {
-	background-color: rgba(50, 50, 50, 0.976); 
+	background-color: rgba(255, 255, 255, 0.248); 
   }
   
   .arrow-down:hover{
-	border-top: 15px solid rgba(228, 228, 228, 0.922); 
+	border-top: 15px solid rgba(4, 4, 4, 0.703); 
 
   }
   
@@ -41,7 +41,7 @@ img{
 	height: 0;
 	border-left: 10px solid transparent;
 	border-right: 10px solid transparent;
-	border-top: 15px solid rgb(39, 39, 39); 
+	border-top: 15px solid rgb(255, 255, 255); 
   }
 
 .date-container{
@@ -142,7 +142,7 @@ align-items:center;
 	padding: 0;
 	text-align: center;
 	font-size: 2.5em; 
-	color:#564E58;
+	color:#f2efe9;
 
   
 }
@@ -151,7 +151,7 @@ align-items:center;
 	padding-top: 2.2em;
 	text-align: center;
 	font-size: 2em; 
-	color:#564E58;
+	color:#f2efe9;
 
 }
 
@@ -177,9 +177,9 @@ hr {
 	background-color:rgba(255, 255, 255, 0.645);
   width: auto;
 	border-radius:20px;
-	color:#564E58;
+	color:#252627;
 	font-size: 1.5em;
-	box-shadow: 0px 0px 20px rgba(169, 169, 169, 0.9);
+	box-shadow: 0px 0px 20px rgba(217, 217, 217, 0.9);
 	
 }
 
@@ -220,6 +220,7 @@ hr {
 
 .our-speackers h1{
 font-size: 1.5em;
+color:#f2efe9;
 }
 
 .our-speackers img {
@@ -253,8 +254,7 @@ font-size: 1.5em;
   text-align: center;
   width: 12em;
   margin-left: 10em;
-	color:#564E58;
-  
+	color:#f2efe9;  
 }
 
 .speacker-and-menu-container2 h1{
@@ -286,7 +286,7 @@ font-size: 1.5em;
 	background-color:rgba(255, 255, 255, 0.645);
   width: auto;
 	border-radius:20px;
-	color:#564E58;
+	color:#252627;
 	font-size: 1.5em;
 	box-shadow: 0px 0px 20px rgba(169, 169, 169, 0.9);
 	
@@ -314,7 +314,7 @@ font-size: 1.5em;
 }
 
 .speacker-and-menu-container3 {
-  grid-column: 2/span 1;/* Adjust the grid span to 1 column */
+  grid-column: 2/span 1;
   display: flex;
   flex-direction: column;
   justify-content: center; /* Vertically center content */
@@ -323,8 +323,8 @@ font-size: 1.5em;
   text-align: center;
   width: 12em;
   margin-left: 10em;
-	color:#564E58;
-  
+  color:#f2efe9;
+
 }
 
 .speacker-and-menu-container3 h1{
@@ -356,7 +356,7 @@ font-size: 1.5em;
 	background-color:rgba(255, 255, 255, 0.645);
   width: auto;
 	border-radius:20px;
-	color:#564E58;
+	color:#252627;
 	font-size: 1.5em;
 	box-shadow: 0px 0px 20px rgba(169, 169, 169, 0.9);
 	
