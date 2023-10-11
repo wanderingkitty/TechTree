@@ -387,3 +387,42 @@ color:#f2efe9;
 	font-weight: bold;
 	text-decoration: underline rgba(118, 118, 118, 0.449);
 }
+
+
+@media screen and (max-width: 768px) {
+  .content-page {
+    grid-template-columns: 1fr; /* Switch to a single column layout */
+  }
+
+  .content-row h1, .content-row h2 {
+    text-align: center;
+  }
+
+  .first-day-events,
+  .second-day-events,
+  .third-day-events {
+    margin: 1em;
+  }
+
+  .content-row-day2,
+  .content-row-day3 {
+    grid-template-columns: 1fr; /* Switch to a single column layout */
+  }
+
+  .speacker-and-menu-container,
+  .speacker-and-menu-container2,
+  .speacker-and-menu-container3 {
+    margin-left: 0; /* Reset margin for smaller screens */
+  }
+}
+
+/* For smaller screens (up to 480px) */
+@media screen and (max-width: 480px) {
+  .content-page {
+    gap: 10px; /* Reduce the gap between columns */
+  }
+
+  .content-row h1, .content-row h2 {
+    font-size: 1.8em; /* Reduce font size for headings */
+  }
+}

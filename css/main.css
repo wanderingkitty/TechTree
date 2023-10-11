@@ -258,58 +258,248 @@ position: relative;
 	transform: translate(-50%, -50%);
 	text-align: center;
 }
-
-@media screen and (max-width: 700px) {
-	img {
-	   width: 25px;
-	   height: 25px;
+  
+  @media screen and (max-width: 700px) {
+	body {
+	  background-size: cover;
 	}
-
+  
+	.intro-row {
+	  padding: 10%;
+	  text-align: center;
+	}
+  
+	.intro-row h1 {
+	  font-size: 2em;
+	}
+  
+	.intro-row h2 {
+	  font-size: 1em;
+	}
+  
+	.rounded-image-container {
+	  width: 100%;
+	  overflow: auto;
+	}
+  
+	.rounded-image, .rounded-image2 {
+	  width: 40%;
+	}
+  
+	.rounded-image img, .rounded-image2 img {
+	  width: 100%;
+	  height: auto;
+	}
+  
 	.ai-image {
-		width: 200px;
-		height: 200px;
+	  width: 70%;
+	  margin: 0 auto;
 	}
-   
-	.intro-row, .content-row, .media-container, .conference-container {
-	   display: flex;
-	   flex-direction: column;
-	   justify-content: center;
-	   align-items:center;
-	   font-size: 1.2em;
+  
+	.conference-container {
+	  padding: 10%;
+	  display: flex;
+	  flex-direction: column;
+	  height: auto;
 	}
-   
-	.media-container img {
-	   width: 200px;
-	   height: 200px;
+  
+	.unlock {
+	  bottom: 1em;
+	  left: 0;
 	}
-   
-	h1, h2, h3 {
-	   font-size: 2em;
-	}
-   
-	.arrow-button {
-	 width: 80px;
-	 height: 60px;
-	 display: flex;
-	 align-items:center;
-	}
-   
-	.arrow-down {
-	   border-top-width: 30px;
-	   border-left-width: 15px; 
-	   border-right-width: 15px; 
-	 }
-   
-	 .first-day-events {
-	   display: flex;
-	   flex-direction: column;
-	   width: 15em;
-	   font-size: 1.5em;
-	 }
-   
-	 h3 {
-	   font-size:1.4em;
-   }
-   
+  
+	.buy-now {
+	  top: 5em;
+	  bottom: 0.5em;
 
-   }
+	}
+  
+	.media-container {
+	  grid-template-columns: 1fr;
+	  grid-gap: 1em;
+	}
+  
+	.media-title {
+	  grid-column: span 1;
+	}
+  
+	.media-profile {
+	  width: 100%;
+	  text-align: center;
+	}
+  
+	.media-profile img {
+	  width: 50%;
+	  height: auto;
+	}
+  
+	.overlay {
+	  width: 100%;
+	  height: 100%;
+	  border-radius: 0;
+	}
+  
+	.media-profile:hover .overlay {
+	  opacity: 1;
+	}
+  
+	.learn-arrow {
+	  position: relative;
+	  bottom: 0;
+	  left: 0;
+	}
+  }
+
+  
+  @media screen and (max-width: 320px) {
+	body {
+	  background-size: cover;
+	}
+  
+	.intro-row {
+	  padding: 10%;
+	  text-align: center;
+	}
+  
+	.intro-row h1 {
+	  font-size: 1.8em;
+	}
+  
+	.intro-row h2 {
+	  font-size: 0.8em;
+	}
+  
+	.rounded-image-container {
+	  width: 100%;
+	  overflow: auto;
+	}
+  
+	.rounded-image, .rounded-image2 {
+	  width: 45%;
+	}
+  
+	.rounded-image img, .rounded-image2 img {
+	  width: 100%;
+	  height: auto;
+	}
+  
+	.ai-image {
+	  width: 80%;
+	  margin: 0 auto;
+	}
+  
+	.conference-container {
+	  padding: 10%;
+	}
+  
+	.unlock {
+	  bottom: 1em;
+	  left: 0;
+	}
+  
+	.buy-now {
+	  bottom: 0.5em;
+	}
+  
+	.media-container {
+	  grid-template-columns: 1fr;
+	  grid-gap: 1em;
+	}
+  
+	.media-title {
+	  grid-column: span 1;
+	}
+  
+	.media-profile {
+	  width: 100%;
+	  text-align: center;
+	}
+  
+	.media-profile img {
+	  width: 80%;
+	  height: auto;
+	}
+  
+	.overlay {
+	  width: 100%;
+	  height: 100%;
+	  border-radius: 0;
+	}
+  
+	.media-profile:hover .overlay {
+	  opacity: 1;
+	}
+  
+	.learn-arrow {
+	  position: relative;
+	  bottom: 0;
+	  left: 0;
+	}
+  }
+  
+  @media (max-width: 768px) {
+	.rounded-image, .rounded-image2 {
+	  width: 50%;
+	}
+  
+	.ai-image {
+	  width: 100%;
+	  margin-right: 0;
+	}
+  
+	.intro-row h1 {
+	  font-size: 2.5em;
+	}
+  
+	.intro-row h2 {
+	  font-size: 1.2em;
+	}
+  
+	.conference-container {
+	  padding: 3em;
+	}
+  
+	.unlock {
+	  bottom: 2em;
+	  left: 0;
+	}
+  
+	.buy-now {
+	  bottom: 1.5em;
+	}
+  }
+  
+  @media (max-width: 480px) {
+	.rounded-image, .rounded-image2 {
+	  width: 100%;
+	}
+  
+	.ai-image {
+	  width: 100%;
+	  margin-right: 0;
+	}
+  
+	.intro-row h1 {
+	  font-size: 2em;
+	}
+  
+	.intro-row h2 {
+	  font-size: 1em;
+	}
+  
+	.conference-container {
+	  padding: 2em;
+	}
+  
+	.unlock {
+	  bottom: 1em;
+	  left: 0;
+	}
+  
+	.buy-now {
+	  bottom: 0.5em;
+	}
+  }
+  
+  /* Add more media queries for other screen sizes as needed */
+  

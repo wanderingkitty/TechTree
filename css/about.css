@@ -127,3 +127,52 @@ hr {
 	  color:#F2EFE9;
 	}
 	
+	/* Responsive styles for smaller screens */
+@media screen and (max-width: 768px) {
+	.about-tree,
+	.connection {
+	  padding: 1em;
+	  font-size: 1.2em;
+	}
+  
+	.about-tree img {
+	  max-width: 100%;
+	}
+  
+	.branch1 img,
+	.branch2 img,
+	.branch3 img,
+	.branch4 img {
+	  max-width: 100%;
+	  max-height: 80px;
+	  margin-right: 10px;
+	}
+  
+	.newsletter {
+	  width: 90%;
+	  margin: 2em auto;
+	  padding: 10px;
+	}
+  }
+  
+
+  @media screen and (max-width: 480px) {
+	.about-tree,
+	.connection {
+	  font-size: 1em;
+	}
+  
+	h1 {
+	  font-size: 1.2em;
+	}
+  
+	.branch1 img,
+	.branch2 img,
+	.branch3 img,
+	.branch4 img {
+	  max-width: 100%;
+	  max-height: 60px;
+	  margin-right: 5px;
+	}
+  }
+  
