@@ -2,13 +2,88 @@ body{
 	margin: 0;
 	padding: 0;
 font-family: 'Rajdhani', sans-serif;
-font-family: 'Rajdhani', sans-serif;
 background-color:#252627;
 color:#F2EFE9;
 }
 
 .tickets-container {
 	display: grid;
-	grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: repeat(3, 1fr);
 	margin: 4em;
+	gap: 10px;
+	text-align: left;
+	font-size: 1.3em;
+	align-items:start;
+}
+
+  .content {
+    background-color: #252627;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 20px rgba(73, 73, 73, 0.9);
+    text-align: left;
+	display: flex;
+	flex-direction: column;
+	height: 65vh;
+}
+
+.buttons {
+	display: inline-block;
+	align-items: center;
+	gap: 10px;
+    text-align: center;
+  }
+
+.remote h1,
+.basic h1,
+.premium h1 {
+  text-align: center; 
+}
+
+.remote h2,
+.basic h2,
+.premium h2 {
+  text-align: center; 
+}
+
+.remote-btn,
+.basic-btn,
+.premium-btn {
+  background-color: #F2EFE9;
+  border: none;
+  border-radius: 20px;
+  height: 50px;
+  position: relative;
+  font-size: 1em;
+  box-shadow: 0px 0px 20px rgba(73, 73, 73, 0.9);
+  width: 100%;
+  text-align: center;
+}
+
+.remote-btn:hover,
+.basic-btn:hover,
+.premium-btn:hover {
+  cursor: pointer;
+  background-color: #252627;
+  color: #F2EFE9;
+  border: 2px solid #F2EFE9;
+}
+
+.tickets-container h1, .tickets-container h2 {
+	text-align: center;
+}
+
+.remote-btn:hover, .basic-btn:hover, .premium-btn:hover{
+	cursor: pointer;
+	background-color:#252627;
+	color:#F2EFE9;
+	border:2px solid #F2EFE9;
+}
+
+.basic-btn{
+	margin-top: 3.9em;
+}
+
+.premium-btn {
+	margin-top: 1.3em;
 }
