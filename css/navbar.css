@@ -92,6 +92,38 @@ nav li:hover {
 	height: 40px;
 }
 
+footer {
+	background-color:#161617;
+    color: #F2EFE9; 
+    padding: 20px; 
+    text-align: center; 
+}
+
+
+footer ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+footer ul li {
+    display: inline;
+    margin-right: 20px;
+    margin-left: 20px;
+    padding: 0;
+}
+
+footer a {
+    text-decoration: none;
+    color: #F2EFE9;
+
+}
+
+/* Style the text within the footer */
+.footer-content {
+    font-size: 14px; /* Set the font size for the text */
+}
+
 @media only screen and (max-width: 700px) {
 
 

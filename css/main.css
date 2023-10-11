@@ -140,25 +140,21 @@ body::before {
 }
 
 .unlock {
-	display: inline-block;
-	background-color:rgba(255, 255, 255, 0.645);
-	box-shadow: 0px 0px 20px rgba(116, 116, 116, 0.9);
+   text-decoration: none;
 	border-radius:20px;
     border:none;
-    padding: 0.3em;
-	font-size: 1.5em;
+	font-size: 1.2em;
 	font-family: 'Rajdhani', sans-serif;
 	position: relative;
-	bottom: 6em;
-	left: 2em;
-
+	bottom: 7.2em;
+	left: 2.4em;
+    color:#F2EFE9;
 
 }
 
 .unlock:hover {
 	cursor: pointer;
-	background-color:#252627;
-    color:#F2EFE9;
+  
 }
 
 .buy-now{
@@ -167,12 +163,13 @@ body::before {
 	box-shadow: 0px 0px 20px rgba(129, 129, 129, 0.9);
 	border-radius:20px;
     border:none;
+	width: 7em;
     padding: 0.3em;
 	font-size: 1.5em;
 	font-family: 'Rajdhani', sans-serif;
 	position: relative;
-	left: 8em;
-	bottom: 7.9em;
+	left: 2em;
+	bottom: 6em;
 
 }
 
@@ -187,7 +184,7 @@ body::before {
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr;
 	gap: 20px;
-	margin: 1em;
+	margin-bottom: 6em;
 
 }
 
@@ -200,6 +197,30 @@ body::before {
     grid-column: span 3; 
     text-align: center; 
 	font-size: 2em;
+}
+
+.circle {
+  width: 25px;
+  height: 25px;
+  border: 2px solid #F2EFE9;
+  border-radius: 50%; /* To create a circle */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.arrow {
+  width: 0;
+  height: 0;
+  border-top: 7px solid transparent; /* Triangle pointing to the right */
+  border-bottom: 7px solid transparent;
+  border-left: 10px solid #F2EFE9; /* Adjust the size as needed */
+}
+
+.learn-arrow {
+	position: relative;
+	bottom: 10.2em;
+	left: 6.8em;
 }
 
 @media screen and (max-width: 700px) {
