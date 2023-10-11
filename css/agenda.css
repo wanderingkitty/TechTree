@@ -24,7 +24,7 @@ img{
 	border-radius: 5px; 
 	transition: background-color 0.3s; 
   position: relative;
-  top: 4em;
+  top: 1.5em;
   }
   
   .arrow-button:hover {
@@ -45,7 +45,8 @@ img{
   }
 
 .date-container{
-margin: 10em auto;
+margin: 4em auto;
+padding: 3em;
 display: flex;
 flex-direction: column;
 justify-content: center;
@@ -93,7 +94,6 @@ align-items:center;
   background-color:rgb(255, 255, 255);
   color:#2f2f2f;
   font-size: 1.3em;
-
   
 }
 
