@@ -116,12 +116,10 @@ footer ul li {
 footer a {
     text-decoration: none;
     color: #F2EFE9;
-
 }
 
-/* Style the text within the footer */
 .footer-content {
-    font-size: 14px; /* Set the font size for the text */
+    font-size: 1em;
 }
 
 @media only screen and (max-width: 700px) {
@@ -133,7 +131,7 @@ footer a {
         color:black;
 		align-items: flex-end;
 		position: absolute;
-		top: 40px;
+		top: 60px;
 		left: 0;
 		width: 100%;
 		z-index: 1;

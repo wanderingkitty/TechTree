@@ -32,7 +32,7 @@ hr {
 	color:#F2EFE9;
 }
 
-.day-one-speakers {
+.day-one-speakers, .day-two-speakers {
 	display: flex;
 	flex-direction: column;
 	text-align: left;
@@ -48,7 +48,7 @@ hr {
 }
 
 
-.mark, .ameca, .reed {
+.mark, .ameca, .reed, .tim, .jeff {
     display: grid;
 	grid-template-columns: 1fr 1fr;
 	grid-template-rows: 1fr;
@@ -59,12 +59,33 @@ hr {
 
 .image-container {
 	grid-column: 1;
+	position: relative;
+	left: 5em;
 }
 
 .image-container2 {
 	grid-column: 2;
     margin-left: auto;
-	
+	position: relative;
+	right: 5em;
+
+}
+
+.image-container3 {
+	position: relative;
+	left: 5em;
+}
+
+.image-container4 {
+	grid-column: 2;
+	position: relative;
+	left: 5em;
+}
+
+.image-container5 {
+	grid-column: 1;
+	position: relative;
+	left: 5em;
 }
 
 .mark p {
@@ -72,3 +93,8 @@ hr {
 	grid-row: 1;
 }
 
+
+.tim p {
+	grid-column: 1;
+	grid-row: 1;
+}

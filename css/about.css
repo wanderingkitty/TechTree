@@ -65,7 +65,8 @@ hr {
 	margin: 4em;
     width: auto;
 	padding: 3em;
-	font-size: 1em;
+	font-size: 1.5em;
+	white-space: pre-line;
 	align-items:center;
     background-color:#252627;
 	color:#F2EFE9;
@@ -113,12 +114,6 @@ hr {
 	  font-size: 1.5em;
 	  line-height: 10px;
   }
-  
-	p {
-
-	  font-size: 1.5em;
-	  white-space: pre-line;
-	}
   
   .text {
 	width: 100%;
