@@ -17,6 +17,10 @@ span {
 	font-size: 1.4em;
 }
 
+h1 {
+	text-align: center;
+}
+
 hr {
 	width: 60vw;
 	margin: 20px auto;

@@ -91,6 +91,7 @@ nav li:hover {
 .logo {
 	width: 34px;
 	height: 30px;
+	position: relative;
 }
 
 footer {
@@ -136,7 +137,7 @@ footer a {
         color:black;
 		align-items: flex-end;
 		position: absolute;
-		top: 60px;
+		top: 40px;
 		left: 0;
 		width: 100%;
 		z-index: 1;
@@ -146,8 +147,9 @@ footer a {
 	}
     
 	.menu a {
-		margin-left: 12px;
+		margin-left: 10em;
         color:black;
+
 	}
 
 	.menu li {
@@ -164,6 +166,15 @@ footer a {
 		color:#252627;
 		font-size: 28px;
 		cursor: pointer;
+	position: relative;
+	left: 8em;
 	}
+
+	nav a {
+		position: relative;
+		left: 2em;
+	}
+
+	
 
 }

@@ -26,7 +26,7 @@ justify-content: space-around;
 	box-shadow: 0px 0px 20px rgba(241, 241, 241, 0.9);
     filter: brightness(30%); 
 	position: relative;
-	right: 1em;
+	right: 0.5em;
 	z-index: -1;
 }
 
@@ -53,7 +53,7 @@ justify-content: space-around;
 .image-container2 {
 	position:relative;
     top: 10em;
-	left: 1em;
+	/* left: 1em; */
 }
 
 .image-container3 {
