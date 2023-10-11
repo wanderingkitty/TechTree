@@ -382,20 +382,3 @@ font-size: 1.5em;
 	font-weight: bold;
 	text-decoration: underline rgba(118, 118, 118, 0.449);
 }
-
-@media (max-width: 700px) {
-  .content-page {
-    grid-template-columns: 1fr; 
-    grid-column: 2/1;
-
-  }
-
-  .speaker-and-menu-container {
-    grid-template-columns: 1; 
-  }
-
-  img {
-    width: 300px;
-    height: 300px;
-  }
-}
