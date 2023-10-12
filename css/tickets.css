@@ -40,7 +40,9 @@ hr {
 }
 
 .buttons {
-	display: inline-block;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
 	align-items: center;
 	gap: 10px;
     text-align: center;
@@ -61,15 +63,17 @@ hr {
 .remote-btn,
 .basic-btn,
 .premium-btn {
+color:#252627;
+text-decoration: none;
   background-color: #F2EFE9;
   border: none;
   border-radius: 20px;
-  height: 50px;
+  height: 1em;
+  padding: 1em;
   position: relative;
   font-size: 1em;
   box-shadow: 0px 0px 20px rgba(73, 73, 73, 0.9);
-  width: 100%;
-  text-align: center;
+  width: 8em;
 }
 
 .remote-btn:hover,
@@ -163,7 +167,12 @@ position: relative;
 	text-align: center;
 }
 
-
+.wrapper {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items:center;
+}
 
 
 @media screen and (max-width: 700px)  {

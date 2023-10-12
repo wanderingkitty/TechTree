@@ -13,7 +13,7 @@ h1 {
 }
 
 .book-now {
-	text-decoration: none;
+text-decoration: none;
 background-color:#F2EFE9;
 color:#161617;
 border-radius:20px;
@@ -73,7 +73,7 @@ justify-content: space-around;
 .image-container2 {
 	position:relative;
     top: 10em;
-	/* left: 1em; */
+	left: 1em;
 }
 
 .image-container3 {
@@ -185,5 +185,11 @@ justify-content: space-around;
 		.menu-container {
 		display: flex;
 		flex-direction: column;
+		}
+
+		.book-now {
+			margin: 0;
+			left: 8.5em;
+			right: 0;
 		}
 	  }

@@ -43,7 +43,7 @@
        
 			</div>   
 			     <div class="buttons">
-				<a href="#wrapper"> <button class="remote-btn">Get Remote pass</button></a>
+				<a class="remote-btn" href="#wrapper"> Get Remote pass</></a>
 			</div>
             </div>
 		
@@ -59,25 +59,24 @@
                 </ul>
 			</div>
 		<div class="buttons">
-					<a href="#wrapper"> <button class="basic-btn">Get Basic pass</button></a>
+					<a class="basic-btn" href="#wrapper">  Get Basic pass</a>
 				</div>
 			</div>
-		<div class="content">
-            <div class="premium">
-                <h1>Premium pass:</h1>
-                <h2>$399</h2>
-                <ul>
-                    <li>Everything in the Basic pass.</li>
-                    <li>Access to all seminars and workshops.</li>
-                    <li>Priority check-in and registration.</li>
-                    <li>Priority seating in sessions.</li>
-                    <li>Exclusive conference swag.</li>
-                </ul>
-			</div>
-          <div class="buttons">
-				<a href="#wrapper"> <button class="premium-btn">Get Premium pass</button></a>
-			   </div>
-	</div>
+			<div class="content">
+				<div class="premium">
+					<h1>Premium pass:</h1>
+					<h2>$399</h2>
+					<ul>
+						<li>Everything in the Basic pass.</li>
+						<li>Access to all seminars and workshops.</li>
+						<li>Priority check in and seating in sessions.</li>
+						<li>Exclusive conference swag.</li>
+					</ul>
+				</div>
+			<div class="buttons">
+						<a class="basic-btn" href="#wrapper">  Get Basic pass</a>
+					</div>
+				</div>
 </div>
 
 <hr>
@@ -113,13 +112,13 @@
 <div class="wrapper" id="wrapper">
 		
 	<div class="information-form">
-		<h3>Discover tomorrow's web: Book your conference spot.</h3>
+		<h1>Discover tomorrow's web: Book your conference spot.</h1>
 		<h2>Please, fill in information below</h2>
 	</div>
 	<div action="#" method="GET">
 		<div class="contact-info">
 			<div class="form-container">
-				<h2>Contact Information</h2>
+				<h1>Contact Information</h1>
 				<p>
 					<label for="name">Full Name</label>   
 					<input type="text" id="name" name="user_name" placeholder="Required" title="Please fill out this field"> 
@@ -133,12 +132,6 @@
 					<input type="text" id="address" name="user_address">
 				</p>
 				<p>
-					<label for="date">Choose a date</label>
-
-<input type="date" id="date" name="date-choice" value="2023-10-20" min="2023-10-20" max="2023-10-22" />
-				</p>
-			
-				<p>
 					<label for="state">Ticket version</label>
 					<select id="state" name="user_state">
 						<option value="state">Choose your ticket</option>
@@ -148,15 +141,23 @@
 			
 					</select>
 				</p>
+				<p>
+					<label for="date">Choose a date</label>
+
+<input type="date" id="date" name="date-choice" value="2023-10-20" min="2023-10-20" max="2023-10-22" />
+				</p>
 			</div>
 		</div>
 
-	
 			<div class="form-container">
 			
 				<h3>Select which day would you like to goin</h3>
 
 				<div class="checkboxes">
+					<p>
+						<input type="checkbox" id="day" name="day">
+						<label for="day">All Day's</label>
+					</p>
 					<p>
 						<input type="checkbox" id="day1" name="day1">
 						<label for="day1">Day 1/October 20 </label>
@@ -169,13 +170,10 @@
 						<input type="checkbox" id="day3" name="day3">
 						<label for="day3">Day 3/ October 22</label>
 					</p>
-					<p>
-						<input type="checkbox" id="day" name="day">
-						<label for="day">All Day's</label>
-					</p>
+					
 				</div>
 
-				<p>Food preferences</p>
+				<h1>Food preferences</h1>
 			
 					<h2>Select preffered meal type-options:</h2>
 				  
