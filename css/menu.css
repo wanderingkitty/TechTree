@@ -136,4 +136,34 @@ justify-content: space-around;
 		font-size: 1.3em;
 	  }
 
-	
+	  @media screen and (max-width: 700px) {
+		.welcome {
+			grid-template-columns: 1fr;
+		}
+
+		.welcome-container  {
+			text-align: center;
+			align-items:center;
+			margin: 2em auto;
+			left: 0;
+			right: 0;
+
+		}
+
+		.first-image{
+			width: 365px;
+			grid-column: 1/ span 1;
+			margin-left: 2em;
+			left: 0;
+			right: 0;
+			align-items: center;
+		}
+		.image-container, .image-container2, .image-container3,  .image-container4, .image-container5 {
+			display: none;
+		}
+
+		.menu-container {
+		display: flex;
+		flex-direction: column;
+		}
+	  }
