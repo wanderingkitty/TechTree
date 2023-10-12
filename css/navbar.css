@@ -128,7 +128,7 @@ footer a {
 		background-color: #ffffff;
 		align-items: flex-end;
 		position: absolute;
-		top: 70px;
+		top: 40px;
 		left: 0;
 		width: 100%;
 		z-index: 1;
@@ -149,7 +149,7 @@ footer a {
 		font-size: 28px;
 		cursor: pointer;
 	position: relative;
-	left: 8em;
+	left: 7em;
 	}
 
 }
