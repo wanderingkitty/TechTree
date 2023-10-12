@@ -41,7 +41,7 @@ a {
     display: flex;
     justify-content: row; /* Adjust the alignment as needed */
     width: 850px; /* Set your desired width */
-    height: 150px; /* Set your desired height */
+    height: 150px;
     overflow: hidden;
 	margin: 2em auto;
 }
@@ -263,17 +263,33 @@ position: relative;
   @media screen and (max-width: 700px) {
 	body {
 	  background-size: cover;
-	  height: 100vh;
+	  height: 80vh;
+	  width: 100%;
+	}
+
+	body::before {
+		content: "";
+		position: absolute;
+		top: 0;
+		left: 0;
+		height: 86vh;
+		width: 113vw;
+	}
+
+	.rounded-image-container{
+		width: 850px; /* Set your desired width */
+		height: 80px;
 	}
 .intro-row {
 	height: auto;
 }
 	.intro-row h1 {
 	  font-size: 2em;
+	  margin: 0.2em;
 	}
   
 	.intro-row h2 {
-	  font-size: 1em;
+	  margin-bottom:0;
 	}
   
 	.rounded-image-container {
@@ -297,12 +313,12 @@ position: relative;
   
 	.conference-container {
 	  padding: 30px;
-	  margin: 0;
+	  margin-left:1em;
+	  margin-top: 9em;
 	  display: flex;
 	  flex-direction: column;
-	  justify-content: center;
 	  text-align: center;
-	  height: 200vh;
+	  height: 120vh;
 	}
   
 	.unlock {
@@ -321,7 +337,9 @@ position: relative;
 	.media-container {
 	  grid-template-columns: 1fr;
 	  grid-gap: 1em;
-	  margin-left:0;
+	  margin-left:2em;
+	  margin-top: 8em;
+	  align-items:center;
 	}
   
 	.media-title {
