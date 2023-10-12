@@ -174,24 +174,6 @@ a {
     color:#F2EFE9;
 }
 
-
-.media-container {
-	display: grid;
-	grid-template-columns: 1fr 1fr 1fr;
-	gap: 20px;
-	margin-bottom: 6em;
-	margin-left: 7em;
-    color:#F2EFE9;
-
-}
-
-.media-title {
-    grid-column: span 3; 
-    text-align: center; 
-	font-size: 2em;
-	margin-right: 4em;
-}
-
 .circle {
   width: 25px;
   height: 25px;
@@ -214,6 +196,23 @@ a {
 	position: relative;
 	bottom: 10.2em;
 	left: 6.8em;
+}
+
+.media-container {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	gap: 20px;
+	margin-bottom: 6em;
+	margin-left: 7em;
+    color:#F2EFE9;
+
+}
+
+.media-title {
+    grid-column: span 3; 
+    text-align: center; 
+	font-size: 2em;
+	margin-right: 4em;
 }
 
 .overlay {

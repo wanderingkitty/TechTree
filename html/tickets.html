@@ -43,7 +43,7 @@
        
 			</div>   
 			     <div class="buttons">
-				<a href="#"> <button class="remote-btn">Get Remote pass</button></a>
+				<a href="#wrapper"> <button class="remote-btn">Get Remote pass</button></a>
 			</div>
             </div>
 		
@@ -59,7 +59,7 @@
                 </ul>
 			</div>
 		<div class="buttons">
-					<a href="#"> <button class="basic-btn">Get Basic pass</button></a>
+					<a href="#wrapper"> <button class="basic-btn">Get Basic pass</button></a>
 				</div>
 			</div>
 		<div class="content">
@@ -75,9 +75,150 @@
                 </ul>
 			</div>
           <div class="buttons">
-				<a href="#"> <button class="premium-btn">Get Premium pass</button></a>
+				<a href="#wrapper"> <button class="premium-btn">Get Premium pass</button></a>
 			   </div>
 	</div>
+</div>
+
+<hr>
+
+	<div class="sponsor-container">
+		<div class="sponsors-title">
+			<h1>Sponsors</h1>
+		</div>
+		<div class="sponsor-profile">
+		<img src="/IMG/00b9e7f5-a69d-46df-ad46-ac0d67ba1bfa.png" alt="">
+		<div class="overlay">
+			<div class="social-name">Roll&Weels</div>
+		</div>
+	</div>
+	
+	<div class="sponsor-profile">
+		<img class="youtube" src="/IMG/4f52215b-fed8-4137-a64c-f7f32c6767b6.png" alt="">
+		<div class="overlay">
+			<div class="social-name">Space Y</div>
+		</div>
+	</div>
+	
+	<div class="sponsor-profile">
+		<img class="facebook" src="/IMG/5b9de835-aec6-4e73-afba-aff50ef1a5bc.png" alt="">
+		<div class="overlay">
+			<div class="social-name">La Land</div>
+		</div>
+	</div>
+	</div>
+
+<hr>
+
+	<div class="wrapper" id="wrapper">
+		<main>
+			<div class="info">
+				<h3>Discover tomorrow's web: Book your conference spot.</h3>
+				<p>Fill in information below</p>
+			</div>
+			<form action="#" method="GET">
+				<fieldset class="contact-info">
+					<div class="container">
+						<legend>Contact Information</legend>
+						<p>
+							<label for="name">Full Name</label>   
+							<input type="text" id="name" name="user_name" placeholder="Required" title="Please fill out this field"> 
+						</p>
+						<p>
+							<label for="email">Email Address</label>   
+							<input type="email" id="email" name="user_email" placeholder="Required" title="Please fill out this field"> 
+						</p>
+						<p>
+							<label for="address">Street Adress</label>   
+							<input type="text" id="address" name="user_address">
+						</p>
+						<p>
+							<label for="start">Choose specific date</label>
+
+<input type="date" id="start" name="trip-start" value="2023-10-20" min="2023-10-20" max="2023-10-22" />
+						</p>
+					
+						<p>
+							<label for="state">Ticket version</label>
+							<select id="state" name="user_state">
+								<option value="state">Choose your ticket</option>
+								<option value="abc">Remote pass</option>
+								<option value="def">Basic pass</option>
+								<option value="geh">Premium pass</option>
+					
+							</select>
+						</p>
+					</div>
+				</fieldset>
+
+			
+					<div class="container">
+					
+						<p>Select which day you would like to goin</p>
+
+						<div class="checkboxes">
+							<p>
+								<input type="checkbox" id="html_news" name="news">
+								<label for="html_news">Day 1/October 20 </label>
+							</p>
+							<p>
+								<input type="checkbox" id="css_news" name="news">
+								<label for="css_news">Day2/ October 21</label>
+							</p>
+							<p>
+								<input type="checkbox" id="js_news" name="news">
+								<label for="js_news">Day 3/ October 22</label>
+							</p>
+							<p>
+								<input type="checkbox" id="js_news" name="news">
+								<label for="js_news">All Day's</label>
+							</p>
+						</div>
+
+						<p>Food preferences</p>
+						<fieldset>
+							<legend>Select preffered meal type-options:</legend>
+						  
+							<div>
+							  <input type="radio" id="huey" name="drone" value="huey" checked />
+							  <label for="huey">Meat</label>
+							</div>
+						  
+							<div>
+							  <input type="radio" id="dewey" name="drone" value="dewey" />
+							  <label for="dewey">Fish</label>
+							</div>
+						  
+							<div>
+							  <input type="radio" id="louie" name="drone" value="louie" />
+							  <label for="louie">Vegetarian</label>
+							</div>
+						  </fieldset>
+						  
+
+						<p>Do you have any allergies?</p>
+						<p>
+							<select>
+								<option value="PickOne">Pick One</option>
+								<option value="Google">Yes</option>--
+								<option value="Bing">No</option>		
+							</select>
+						</p>
+
+						<p>Please let us know if you are allergic aggainst something</p>
+						<p>
+							<textarea id="interest" name="user_interest"></textarea> <br/>
+						</p>
+					</div>
+				
+				</fieldset>
+				
+			</form>
+			<button type="submit">Book Now</button>
+
+
+
+
     </main>
 </body>
 </html>
