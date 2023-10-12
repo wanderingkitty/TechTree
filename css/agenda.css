@@ -151,6 +151,11 @@ align-items:center;
   left: 1em;
 }
 
+.hosts-line {
+  max-width: 60%;
+  margin: 0 auto;
+}
+
 .content-row h2 {
 	padding-top: 2.2em;
 	text-align: center;
@@ -210,11 +215,11 @@ hr {
 }
 
 .speaker-and-menu-container {
-  grid-column: 2/span 1; /* Adjust the grid span to 1 column */
+  grid-column: 2/span 1;
   display: flex;
   flex-direction: column;
-  justify-content: center; /* Vertically center content */
-  align-items: center; /* Horizontally center content */
+  justify-content: center; 
+  align-items: center; 
   font-size: 1.5em;
   text-align: center;
   width: 7em;
@@ -389,40 +394,58 @@ color:#f2efe9;
 }
 
 
-@media screen and (max-width: 768px) {
-  .content-page {
-    grid-template-columns: 1fr; /* Switch to a single column layout */
+@media screen and (max-width: 700px)  {
+
+  .date-container {
+    padding: 2em;
+  display: flex;
+  flex-direction: column;
   }
 
-  .content-row h1, .content-row h2 {
+  .infodates h1 {
+    font-size: 1em;
+    white-space: pre-wrap; 
     text-align: center;
+    max-width: 60%;
+    margin: 0 auto;
   }
 
-  .first-day-events,
-  .second-day-events,
-  .third-day-events {
-    margin: 1em;
+  .join-remotely, .join-now {
+    width: 130px;
   }
 
-  .content-row-day2,
-  .content-row-day3 {
-    grid-template-columns: 1fr; /* Switch to a single column layout */
+  .content-row {
+    display: grid;
+    grid-template-columns: 1fr;
   }
 
-  .speacker-and-menu-container,
+  .first-day-events{
+    margin-left:3em ;
+    padding: 2em;
+    width: 13em;
+  }
+
+  .second-day-events, .third-day-events {
+    margin-left:4em ;
+    padding: 2em;
+    width: 13em;
+  }
+ 
+  .speaker-and-menu-container,
+  .our-speackers {
+    grid-column: 1 / span 1;
+    width: auto;
+    margin: 1em auto;
+  }
+
   .speacker-and-menu-container2,
   .speacker-and-menu-container3 {
-    margin-left: 0; /* Reset margin for smaller screens */
-  }
-}
+    grid-column: 1 / span 1;
+    margin: 0 auto;
 
-/* For smaller screens (up to 480px) */
-@media screen and (max-width: 480px) {
-  .content-page {
-    gap: 10px; /* Reduce the gap between columns */
   }
-
-  .content-row h1, .content-row h2 {
-    font-size: 1.8em; /* Reduce font size for headings */
+  .second-day-events {
+    grid-column: 1 / span 1;
+   
   }
 }

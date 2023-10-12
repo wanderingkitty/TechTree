@@ -110,3 +110,39 @@ hr {
 	grid-column: 1;
 	grid-row: 1;
 }
+
+@media screen and (max-width: 700px) {
+
+.firts-speaker-container {
+	grid-template-columns: 1fr;
+}
+
+	.image-container, .image-container2,
+	.image-container3, .image-container4, .image-container5 {
+	  grid-column: 1 / span 2; /* Expand to cover 2 columns */
+	  margin: 0 auto; /* Center the image */
+	  left: 0;
+	}
+  
+	.day-one-speakers,
+	.day-two-speakers {
+		margin: 0;
+	  display: flex;
+	  flex-direction: column; /* Stack elements vertically */
+	  align-items: center; /* Center the elements */
+	  text-align: center;
+	}
+  
+	.mark p,
+	.tim p {
+	  grid-column: 1;
+	  grid-row: 2; /* Place the text under the image */
+	  text-align: center; /* Center the text */
+	}
+
+	.ameca, .mark, .reed, .tim, .jeff {
+		display: flex;
+		flex-direction: column;
+	}
+  
+  }
