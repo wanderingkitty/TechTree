@@ -4,6 +4,7 @@ body{
 font-family: 'Rajdhani', sans-serif;
 background-color:#252627;
 color:#F2EFE9;
+min-height: 100vh;
 }
 
 hr {
@@ -162,219 +163,18 @@ position: relative;
 	text-align: center;
 }
 
-.wrapper{
-  background-color: #252627;
-	border:2px solid #F2EFE9;
-	padding-right: 1em;
-	padding-left: 1em;
-	width: 90%;
-	height: 160vh;
-	margin: 4em auto;
-	padding-bottom: 0;
-}
 
-header h2{
-	font-size: 1.8em;
-	margin-top: 0;
-	padding-top: 1em;
-}
-
-.info{
-	text-align: center;
-	padding: 2em;
-	position: relative;
-	bottom:5em;
-}
-
-.info h3{
-	margin-top: 0;
-	padding-top: 2em;
-  font-size: 2.5em;
-}
-
-.info p{
-	font-size: .85em;
-	padding-bottom: 3em;
-	margin-bottom: 2em;
-}
-h3 {
-	text-decoration: underline solid #f2efe96b;
-}
-form{
-
-	margin-top: 2px;
-	padding-top: 1em;
-}
-
-fieldset{
-	border: none;
-	padding: 0;
-	margin-top: 1em;
-	margin-bottom: 1em;
-	padding-top:1em; 
-	padding-bottom:1em;
-}
-
-fieldset legend{
-	font-size: 1.65em;
-	font-weight: bold;
-	padding-bottom: .75em;
-}
-
-.contact-info label{
-	display: block;
-	padding-bottom: .65em;
-  font-size: 1.25em;
-}
-
-.newsletter label{
-  font-size: 1.25em;
-}
-
-.contact-info input , select , textarea{
-	box-shadow: 0 0 1px ;
-	width: 100%;
-	height: 3em;
-	background-color: #F2EFE9;
-	outline: none;
-	border:none;
-	border-radius: 5px;
-	border-color: #fff;
-	text-indent: 10px;
-	transition: border-color .4s ease-in-out;
-}
-
-textarea{
-	height: 85px;
-	padding-top:10px;
-}
-
-.contact-info input:focus , select:focus , textarea:focus{
-	border: 2px solid #46698B;
-	border-radius: 0;
-}
-
-#name:focus,
-#email:focus{
-	border: 2px solid #FF7463;
-}
-
-[type="submit"]{
-	position: relative;
-	left: 21em;
-	margin-top: 3em;
-	width: 30%;
-  background-color: #F2EFE9;
-	height: 50px;
-	border: none;
-	border-radius: 5px;
-	color: #444444;
-  font-size: 1.25em;
-}
-
-[type="submit"]:hover{
-  opacity: .8;
-  cursor: pointer;
-}
-
-.newsletter [type="checkbox"]{
-	transform: scale(1.4);
-}
-
-::placeholder{
-	text-align: right;
-	padding-right: 1em;
-}
-
-
-@media(min-width: 760px){
-
-	.wrapper{
-		max-width: 685px;
-	}
-	
-	.info h3{
-		font-size: 2.5em;
-		letter-spacing: 1px;
-	}
-
-	.info p{
-		font-size: 1.1em;
-	}
-
-	.contact-info label{
-		display: inline-block;
-		width: 40%;
-	}
-
-	.contact-info input , select{
-		width: 78%;
-	}
-
-	.newsletter .checkboxes p{
-		padding-top: 2px;
-		padding-bottom: 2px;
-	}
-}
-
-@media(min-width:1024px){
-
-	.wrapper{
-		width: 90%;
-		max-width: 950px;
-	}
-
-	.contact-info label{
-		display: inline-block;
-	}
-
-	.contact-info input , select{
-		width: 72%;
-	}
-
-	.contact-info p , .newsletter p{
-		margin-top: .5em;
-		margin-bottom: .5em;
-	}
-
-	form{
-		display: grid;
-		grid-template-columns: 1fr 1fr;
-		gap: 10px;
-	}
-
-	.container{
-		display: flex; 
-		flex-direction: column; 
-		min-width: 340px;
-		height: 500px;
-		justify-content: space-around;
-	}
-
-	fieldset{
-		margin-right: 0;
-		margin-left: 0;
-	}
-
-	.contact-info{
-		width: 55%;
-	}
-
-	.newsletter{
-		width: 41%;
-	}
-
-	form{
-		padding-top: 1em;
-	}
-}
 
 
 @media screen and (max-width: 700px)  {
 	.tickets-container {
 grid-template-columns: 1fr;
+margin: 0;
 	}
 
+	.content {
+		grid-column: 1/ span 2;
+	}
 	.sponsor-container {
 		grid-template-columns: 1fr;
 		grid-gap: 1em;
@@ -387,7 +187,8 @@ grid-template-columns: 1fr;
 		grid-column: span 1;
 		font-size: 1em;
 		text-align: center;
-		margin-right: 0;
+		margin: 0;
+		padding: 0;
 	  }
 	
 	  .sponsor-profile {

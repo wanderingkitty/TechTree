@@ -271,7 +271,7 @@ position: relative;
 		position: absolute;
 		top: 0;
 		left: 0;
-		height: 86vh;
+		height: 90vh;
 		width: 113vw;
 	}
 
@@ -311,13 +311,12 @@ position: relative;
 	}
   
 	.conference-container {
-	  padding: 30px;
+	  /* padding: 30px; */
 	  margin-left:1em;
-	  margin-top: 9em;
 	  display: flex;
 	  flex-direction: column;
 	  text-align: center;
-	  height: 120vh;
+	  height: 220vh;
 	}
   
 	.unlock {
