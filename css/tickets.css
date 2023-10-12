@@ -104,7 +104,7 @@ hr {
 	grid-template-columns: 1fr 1fr 1fr;
 	gap: 20px;
 	margin-top: 0;
-   margin-left: 15em;
+   margin-left: 7em;
    margin-bottom: 8em;
     color:#F2EFE9;
 
@@ -114,7 +114,7 @@ hr {
     grid-column: span 3; 
     text-align: center; 
 	font-size: 2em;
-	margin-right: 8em;
+	margin-right:3em;
 	
 }
 
@@ -162,24 +162,15 @@ position: relative;
 	text-align: center;
 }
 
-
 .wrapper{
   background-color: #252627;
 	border:2px solid #F2EFE9;
 	padding-right: 1em;
 	padding-left: 1em;
 	width: 90%;
-	height: 100vh;
+	height: 160vh;
 	margin: 4em auto;
 	padding-bottom: 0;
-}
-
-
-header{
-	height: 64px;
-	color:#F2EFE9;
-	text-align: center;
-	background: linear-gradient(to right, #ff9966, #ff5e62);
 }
 
 header h2{
@@ -195,13 +186,9 @@ header h2{
 	bottom:5em;
 }
 
-.info h3, fieldset legend{
-/* 	color: #444444; */
-}
-
 .info h3{
 	margin-top: 0;
-	padding-top: 0;
+	padding-top: 2em;
   font-size: 2.5em;
 }
 
@@ -274,8 +261,8 @@ textarea{
 
 [type="submit"]{
 	position: relative;
-	left: 18em;
-	margin-top: 6em;
+	left: 21em;
+	margin-top: 3em;
 	width: 30%;
   background-color: #F2EFE9;
 	height: 50px;
