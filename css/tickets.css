@@ -175,7 +175,7 @@ position: relative;
 }
 
 
-@media screen and (max-width: 700px)  {
+@media screen and (max-width: 1200px)  {
 	.tickets-container {
 grid-template-columns: 1fr;
 margin: 2em auto;
