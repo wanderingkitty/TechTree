@@ -12,6 +12,11 @@ h1 {
 	text-shadow: 0 0 10px rgba(255, 255, 255, 0.7);
 }
 
+html {
+	scroll-behavior: smooth;
+}
+
+
 .book-now {
 text-decoration: none;
 background-color:#F2EFE9;
@@ -20,7 +25,7 @@ border-radius:20px;
 border:none;
 display: block;
 position: relative;
-left:30em;
+left:34.5em;
 bottom:2em;
 text-align: center;
 width: 90px;

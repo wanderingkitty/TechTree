@@ -178,7 +178,7 @@ position: relative;
 @media screen and (max-width: 700px)  {
 	.tickets-container {
 grid-template-columns: 1fr;
-margin: 0;
+margin: 2em auto;
 	}
 
 	.content {
@@ -187,7 +187,7 @@ margin: 0;
 	.sponsor-container {
 		grid-template-columns: 1fr;
 		grid-gap: 1em;
-		margin-left:2em;
+		margin-left:0;
 		margin-top: 8em;
 		align-items:center;
 	  }
