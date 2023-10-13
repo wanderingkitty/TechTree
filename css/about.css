@@ -129,51 +129,30 @@ hr {
 	
 	/* Responsive styles for smaller screens */
 @media screen and (max-width: 768px) {
-	.about-tree,
-	.connection {
-	  padding: 1em;
-	  font-size: 1.2em;
+	.company-description {
+		display: grid;
+		grid-template-columns: 1fr;
+		margin: 0 auto;
 	}
-  
-	.about-tree img {
-	  max-width: 100%;
-	}
-  
-	.branch1 img,
-	.branch2 img,
-	.branch3 img,
-	.branch4 img {
-	  max-width: 100%;
-	  max-height: 80px;
-	  margin-right: 10px;
-	}
-  
-	.newsletter {
-	  width: 90%;
-	  margin: 2em auto;
-	  padding: 10px;
-	}
-  }
-  
 
-  @media screen and (max-width: 480px) {
-	.about-tree,
-	.connection {
-	  font-size: 1em;
-	  margin: 0;
+	.about-tree {
+		grid-column: 1;
+		margin: 0 auto;
 	}
-  
-	h1 {
-	  font-size: 1.2em;
-	}
-  
-	.branch1 img,
-	.branch2 img,
-	.branch3 img,
-	.branch4 img {
-	  max-width: 100%;
-	  max-height: 60px;
-	  margin-right: 5px;
-	}
-  }
-  
+
+	.newsletter {
+		width: 90%;
+		margin: 1em auto;
+	  }
+
+	  .newsletter h1 {
+		line-height: 1.5em;
+	  }
+
+	  .connection {
+		display: grid;
+		grid-template-columns: 1fr;
+		margin: 0 auto;
+		padding: 0;
+	  }
+}

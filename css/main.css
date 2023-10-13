@@ -335,8 +335,7 @@ position: relative;
 	.media-container {
 	  grid-template-columns: 1fr;
 	  grid-gap: 1em;
-	  margin-left:2em;
-	  margin-top: 8em;
+	  margin: 0 auto;
 	  align-items:center;
 	}
   
