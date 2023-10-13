@@ -406,6 +406,7 @@ color:#f2efe9;
     padding: 2em;
   display: flex;
   flex-direction: column;
+  margin: 2em auto;
   }
 
   .infodates h1 {
@@ -420,21 +421,46 @@ color:#f2efe9;
     width: 130px;
   }
 
-  .content-row {
+  .content-page {
     display: grid;
     grid-template-columns: 1fr;
+    margin: 0 auto;
   }
+
+.content-row {
+  grid-column: 1;
+  margin: 0 auto;
+}
+
+.content-row h1{
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  text-align: center;
+}
+
+.content-row h2{
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  text-align: center;
+}
 
   .first-day-events{
-    margin-left:3em ;
+  margin: 0 auto;
     padding: 2em;
     width: 13em;
   }
-
+.content-row-day2, .content-row-day3{
+  display: grid;
+  grid-template-columns: 1fr;
+  margin: 0 auto;
+}
   .second-day-events, .third-day-events {
-    margin-left:4em ;
-    padding: 2em;
+   margin: 0 auto;
     width: 13em;
+    padding: 2em;
+
   }
  
   .speaker-and-menu-container,
