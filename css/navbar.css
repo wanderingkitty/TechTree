@@ -43,7 +43,7 @@ nav h2 {
 }
 
 nav li:hover {
-	border-bottom: 2px solid #252627;
+	border-bottom: 2px solid #7d659b;
 
 }
 
@@ -97,7 +97,6 @@ footer {
 	height: 5vh;
 
 }
-
 
 footer ul {
     list-style-type: none;
