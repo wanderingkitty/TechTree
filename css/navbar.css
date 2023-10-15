@@ -91,10 +91,11 @@ footer {
     color: #F2EFE9; 
     padding: 20px; 
     text-align: center; 
+	/* position: absolute; */
 	bottom: 0;
     left: 0;
     width: 100%;
-	height: 5vh;
+	margin-top:calc(5% + 60px);
 
 }
 

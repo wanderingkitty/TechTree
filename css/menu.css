@@ -16,6 +16,12 @@ html {
 	scroll-behavior: smooth;
 }
 
+main {
+	margin-bottom: 5vh; /* Equal to the height of the footer */
+	padding-bottom: 20px; /* Adjust as needed to create space between content and the footer */
+  }
+  
+
 
 .book-now {
 text-decoration: none;

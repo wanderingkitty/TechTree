@@ -186,7 +186,7 @@ font-family: 'Rajdhani', sans-serif;
     height: auto;
     display: grid;
     grid-template-columns: 50% 50%;
-	margin: 2em 17.5em 2em;
+	margin: 4em 17.5em 2em;
     color: var(--main-color);
 }
 
@@ -206,8 +206,7 @@ h1 {
 	border-radius:20px;
 	box-shadow: 0px 0px 20px rgba(78, 78, 78, 0.9);
 	filter: brightness(80%);
-   
-	
+
 }
 
 .form-control {
@@ -407,7 +406,7 @@ margin: 2em auto;
     }
 
     .Name,
-    .Phone,{
+    .Phone{
         display: block;
     }
 }
