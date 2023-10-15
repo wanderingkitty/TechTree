@@ -111,9 +111,10 @@
 
 <div id="FormContainer">
 	<div class="ImgContainer">
-
+<img src="/IMG/4c8fe6e3-44eb-4882-877f-74ba49241ded.png" alt="">
 
 	</div>
+	
 	<form id="Form">
 		<h1 id="FormHeading">Sign Up</h1>
 		<div class="Name">
@@ -131,6 +132,7 @@
 		<div class="Phone">
 			<li><label>Ticket version:</label>
 				<select>
+				<option>Choose an option</option>
 					<option>Remote pass</option>
 					<option>Basic pass</option>
 					<option>Premium pass</option>
@@ -147,16 +149,32 @@
 			</p>
 			
 		</div>
-	
+
 		<div>
-			
+			<h2>Choose all day's at the conference</h2>
 			<label>All days</label>
 		  
 			<div>
 			  <input type="radio" id="alldays" name="alldays" value="alldays" checked />
 		
 			</div>
+			
 		  </div>
+		<li><h2>Food prefernces:</h2>
+			<select>
+				<option>Choose an option</option>
+				<option>Meat</option>
+				<option>Fish</option>
+				<option>Vegetarian</option>
+
+				<select>
+		<li>
+			<label for="name"><h2>To ensure your safety and comfort, please share any known allergies.</h2></label>
+
+			<textarea class="form-control" rows="5" placeholder="Write about your allergies here" name="message" required></textarea>
+			
+		  
+		  
 		<button type="submit">Sign Up</button>
 	</form>
 

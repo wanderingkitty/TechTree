@@ -184,10 +184,11 @@ font-family: 'Rajdhani', sans-serif;
     border-radius: 10px;
     box-shadow: 3px 3px 11px 1.5px #0000002b;
     padding: 10px;
-    height: 550px;
+    height: auto;
     display: grid;
     grid-template-columns: 50% 50%;
 	margin: 2em 17.5em 2em;
+    color: var(--main-color);
 }
 
 h1 {
@@ -198,13 +199,26 @@ h1 {
     grid-column: 1/span 2;
 }
 
-.ImgContainer {
-    overflow: hidden;
-    border-radius: 10px;
-  background:url(/IMG/4c8fe6e3-44eb-4882-877f-74ba49241ded.png);
-  background-size:100% 100%;
+.ImgContainer img {
+	width: 465px;
+	height: 465px;
+	position: relative;
+	top: 10em;
+	border-radius:20px;
 }
 
+.form-control {
+	background-color: #ffffffa1;
+    backdrop-filter: blur(10px);
+font-family: 'Rajdhani', sans-serif;
+    border: 2px solid #ffffff6d;
+    width: 365px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 11px 1.5px #0000002b;
+    padding: 10px;
+    height: auto;
+    color: var(--main-color);
+}
 
 form {
     display: flex;
