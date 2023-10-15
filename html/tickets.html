@@ -112,7 +112,7 @@
 <div id="FormContainer">
 	
 	<form id="Form">
-		<h1 id="FormHeading">Sign Up</h1>
+		<h1 id="FormHeading">Book you ticket</h1>
 		<div class="Name">
 			<li><label>First Name:</label>
 				<input type="text" placeholder="John" required>
@@ -121,11 +121,14 @@
 				<input type="text" placeholder="Doe" required>
 			</li>
 		</div>
+
+		<div class="email">
 		<li>
 			<label>Email:</label>
 			<input type="email" placeholder="johndoe123@gmail.com"  required>
 		</li>
-		<div>
+	</div>
+		<div class="adress">
 			<label for="street-address">Street address</label>
 			<input type="text" id="street-address" name="street-address" autocomplete="street-address" required enterkeyhint="next"></input>
 		  
@@ -140,38 +143,46 @@
 
 					<select>
 			<li>
-				<label>Phone No:</label><input type="pattern" placeholder="123-456-789">
+				<label>Phone No:</label><input type="pattern" placeholder="123-456-789" required>
 			</li>
 		</div>
 	
 
 		<div>
 			<h2>Choose all day's at the conference</h2>
-			<label>All days at the conference</label>
-		  
-			<div>
-			  <input type="radio" id="alldays" name="alldays" value="alldays" checked />
-              <label>Specific date's at the conference</label>
-		  
-              <div>
-                <input type="radio" id="alldays" name="alldays" value="alldays" checked />
-          
-              </div>
+			<label for="alldaysRadio">All days at the conference</label>
+			<input type="radio" id="alldaysRadio" name="alldays" value="alldays" checked required/>
 		
+			<div>
+				<label for="specificDateRadio">Specific date's at the conference</label>
+				<input type="radio" id="specificDateRadio" name="alldays" value="specificDate"required />
 			</div>
+		</div>
+		
 
-            <div class="dates">
-                <p>
-                    <label for="start">Specific date's to join the conference</label>
-    <input type="date" id="start" name="trip-start" value="2023-10-20" min="2023-10-20" max="2023-10-22" />
-                </p>
-                
-            </div>
-			
-		  </div>
+		<h2>Choose day's to join the conference</h2>
+		<div>
+			<label for="easy-1">
+				<input id="easy-1" type="checkbox" />
+				20 October
+			</label>
+		</div>
+		<div>
+			<label for="easy-2">
+				<input id="easy-2" type="checkbox" />
+				21 October
+			</label>
+		</div>
+		<div>
+			<label for="easy-3">
+				<input id="easy-3" type="checkbox" />
+				22 October
+			</label>
+		</div>
+		
 		<li><h2>Food prefernces:</h2>
-			<select>
-				<option>Choose an option</option>
+			<select required>
+				<option>Choose an option</option >
 				<option>Meat</option>
 				<option>Fish</option>
 				<option>Vegetarian</option>

@@ -170,19 +170,18 @@ position: relative;
    
     --background-color: #8c3fe2
 	  background: var(--background-color);
-	  --main-color:#7d659b;
+	  --main-color:#947eaf;
+      --second-color:#F2EFE9;
 	  
 }
 
 #FormContainer {
-    /* background-color: #ffffffa1;
-    backdrop-filter: blur(10px); */
 font-family: 'Rajdhani', sans-serif;
-    width: 965px;
     border-radius: 10px;
     box-shadow: 3px 3px 11px 1.5px #0000002b;
     padding: 0.5em;
-    height: auto;
+    width: 965px;
+    height: 150vh;
     display: grid;
     grid-template-columns: 50% 50%;
 	margin: 4em 17.5em 2em;
@@ -210,12 +209,11 @@ h1 {
     padding: 20px;
     color: var(--main-color);
     font-size: 2.1rem;
-    font-weight: 800;
     grid-column: 1/span 2;
 }
 
 .form-control {
-	background-color: #ffffffa1;
+	background-color: var(--second-color);
     backdrop-filter: blur(10px);
 font-family: 'Rajdhani', sans-serif;
     border: 2px solid #ffffff6d;
@@ -230,8 +228,10 @@ font-family: 'Rajdhani', sans-serif;
 form {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     padding: 10px;
-	width: 400px;
+	width: 40vw;
+
 }
 
 .Name {
@@ -243,7 +243,6 @@ form {
 
 form label {
     font-size: 0.8rem;
-    font-weight: 600;
     width: 100%;
     padding: 5px 15px;
     color: var(--main-color);
@@ -254,8 +253,7 @@ form select {
     padding: 10px;
     border-radius: 8px;
     border: none;
-    background-color: #ffffff6d;
-    width: 100%;
+    background-color: var(--second-color);
     outline: none;
     color: var(--main-color);
     margin-bottom: 10px;
@@ -291,7 +289,17 @@ form select {
         "firstName lastName"
         "ticketVersion phone";
     gap: 20px;
+    
 }
+
+.Name input {
+    width: 100%;
+}
+
+.email input, .adress input{
+    width: 100%;
+}
+
 form li {
     list-style-type: none;
     padding: 0;
@@ -300,8 +308,7 @@ form li {
 }
 
 form label {
-    font-size: 0.8rem;
-    font-weight: 600;
+    font-size: 1em;
 	padding-right: 5px;
     color: var(--main-color);
     grid-area: firstName; 
@@ -311,30 +318,17 @@ form input {
     padding: 10px;
     border-radius: 8px;
     border: none;
-    background-color: #ffffff6d;
-    width: 100%;
+    background-color:var(--second-color);
     outline: none;
     color: var(--main-color);
     margin-bottom: 10px;
-}
-
-form select {
-    padding: 10px;
-    border-radius: 8px;
-    border: none;
-    background-color: #ffffff6d;
-    width: 100%;
-    outline: none;
-    color: var(--main-color);
-    margin-bottom: 10px;
-    grid-area: ticketVersion; 
 }
 
 form .Phone input {
     padding: 10px; 
     border-radius: 8px;
     border: none;
-    background-color: #ffffff6d;
+    background-color: var(--second-color);
     width: 100%; 
     outline: none;
     color: var(--main-color);
@@ -347,17 +341,27 @@ form button {
     border-radius: 5px;
     padding: 10px 20px;
     font-size: 1.1rem;
-    color: white;
+    color: var(--second-color);
     background-color: var(--main-color);
     border: none;
-    cursor: pointer;
     margin: 2em auto;
 }
 
-#alldays {
-	position: relative;
-	right: 13em;
+form button:hover {
+    cursor: pointer;
+    background-color: var(--second-color);
+    color:#252627;
 }
+/* Apply red border to input, select, and textarea with 'required' attribute */
+form input:invalid, form select:invalid, form textarea:invalid, form select[required], form input[required] {
+    border: 1px solid red;
+}
+
+/* Remove the red border when the input is valid */
+form input:valid, form select:valid, form textarea:valid, form select[required]:valid, form input[required]:valid {
+    border: 1px solid var(--main-color); /* Replace with your preferred valid state style */
+}
+
 
 @media screen and (max-width: 1200px)  {
 	.tickets-container {
@@ -408,6 +412,7 @@ margin: 2em auto;
        display: grid;
 	   grid-template-columns: 1fr;
 	   margin: 0 auto;
+       width: 400px;
     }
 
     .Name,
