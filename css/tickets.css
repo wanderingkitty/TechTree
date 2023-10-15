@@ -179,11 +179,10 @@ position: relative;
     background-color: #ffffffa1;
     backdrop-filter: blur(10px);
 font-family: 'Rajdhani', sans-serif;
-    border: 2px solid #ffffff6d;
     width: 965px;
     border-radius: 10px;
     box-shadow: 3px 3px 11px 1.5px #0000002b;
-    padding: 10px;
+    padding: 0.5em;
     height: auto;
     display: grid;
     grid-template-columns: 50% 50%;
@@ -203,8 +202,12 @@ h1 {
 	width: 465px;
 	height: 465px;
 	position: relative;
-	top: 10em;
+	top: 17em;
 	border-radius:20px;
+	box-shadow: 0px 0px 20px rgba(78, 78, 78, 0.9);
+	filter: brightness(80%);
+   
+	
 }
 
 .form-control {
@@ -227,20 +230,10 @@ form {
 	width: 400px;
 }
 
-.Name,
-.password {
+.Name {
     display: grid;
     grid-template-columns: repeat(2, 50%);
 	gap: 20px;
-
-}
-
-form li {
-    list-style-type: none;
-    display: flex;
-    flex-direction: column;
-    padding: 0px 5px;
-    text-align: left;
 
 }
 
@@ -280,10 +273,6 @@ form select {
     width: 100%;
 }
 
-form .Phone input {
-    flex: 1;
-    width: 100%;
-}
 
 .radio {
 	display:flex;
@@ -292,11 +281,61 @@ form .Phone input {
 
 }
 
-.Subscribe {
-    display: flex;
-    flex-direction: row;
+.Name, .Phone {
+    display: grid;
+    grid-template-areas:
+        "firstName lastName"
+        "ticketVersion phone";
+    gap: 20px;
+}
+form li {
+    list-style-type: none;
+    padding: 0;
+    text-align: left;
+	padding-right: 5px;
+}
+
+form label {
+    font-size: 0.8rem;
+    font-weight: 600;
+	padding-right: 5px;
+    color: var(--main-color);
+    grid-area: firstName; 
+}
+
+form input {
     padding: 10px;
-    align-items: center;
+    border-radius: 8px;
+    border: none;
+    background-color: #ffffff6d;
+    width: 100%;
+    outline: none;
+    color: var(--main-color);
+    margin-bottom: 10px;
+}
+
+form select {
+    padding: 10px;
+    border-radius: 8px;
+    border: none;
+    background-color: #ffffff6d;
+    width: 100%;
+    outline: none;
+    color: var(--main-color);
+    margin-bottom: 10px;
+    grid-area: ticketVersion; 
+}
+
+form .Phone input {
+    padding: 10px; 
+    border-radius: 8px;
+    border: none;
+    background-color: #ffffff6d;
+    width: 100%; 
+    outline: none;
+    color: var(--main-color);
+    margin-bottom: 10px;
+    grid-area: phone; 
 }
 
 form button {
@@ -308,42 +347,13 @@ form button {
     background-color: var(--main-color);
     border: none;
     cursor: pointer;
-    margin: auto;
+    margin: 2em auto;
 }
 
 #alldays {
 	position: relative;
 	right: 13em;
 }
-
-@media (max-width:800px) {
-    .ImgContainer {
-        display: none;
-    }
-
-    #FormContainer {
-        grid-template-columns: 100%;
-        width: 380px;
-    }
-
-
-}
-
-@media (max-width:430px) {
-    #FormContainer {
-        border-radius: 0px;
-        width: 100%;
-        padding: 5px;
-        height: 100%;
-    }
-
-    .Name,
-    .Phone,
-    .password {
-        display: block;
-    }
-}
-
 
 @media screen and (max-width: 1200px)  {
 	.tickets-container {
@@ -389,4 +399,15 @@ margin: 2em auto;
 	  .sponsor-profile:hover .overlay {
 		opacity: 1;
 	  }
+
+	  #FormContainer {
+       display: grid;
+	   grid-template-columns: 1fr;
+	   margin: 0 auto;
+    }
+
+    .Name,
+    .Phone,{
+        display: block;
+    }
 }

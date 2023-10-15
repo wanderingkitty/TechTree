@@ -119,17 +119,22 @@
 		<h1 id="FormHeading">Sign Up</h1>
 		<div class="Name">
 			<li><label>First Name:</label>
-				<input type="text" placeholder="John">
+				<input type="text" placeholder="John" required>
 			</li>
 			<li><label>Last Name:</label>
-				<input type="text" placeholder="Doe">
+				<input type="text" placeholder="Doe" required>
 			</li>
 		</div>
 		<li>
 			<label>Email:</label>
-			<input type="email" placeholder="johndoe123@gmail.com">
+			<input type="email" placeholder="johndoe123@gmail.com"  required>
 		</li>
-		<div class="Phone">
+		<div>
+			<label for="street-address">Street address</label>
+			<input type="text" id="street-address" name="street-address" autocomplete="street-address" required enterkeyhint="next"></input>
+		  
+		  </div>
+		<div class="Phone" required>
 			<li><label>Ticket version:</label>
 				<select>
 				<option>Choose an option</option>
@@ -173,9 +178,7 @@
 
 			<textarea class="form-control" rows="5" placeholder="Write about your allergies here" name="message" required></textarea>
 			
-		  
-		  
-		<button type="submit">Sign Up</button>
+		<button type="submit">Book now</button>
 	</form>
 
 </div>
