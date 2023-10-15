@@ -4,7 +4,6 @@ body{
 font-family: 'Rajdhani', sans-serif;
 background-color:#252627;
 color:#F2EFE9;
-min-height: 100vh;
 }
 
 hr {
@@ -176,8 +175,8 @@ position: relative;
 }
 
 #FormContainer {
-    background-color: #ffffffa1;
-    backdrop-filter: blur(10px);
+    /* background-color: #ffffffa1;
+    backdrop-filter: blur(10px); */
 font-family: 'Rajdhani', sans-serif;
     width: 965px;
     border-radius: 10px;
@@ -188,6 +187,23 @@ font-family: 'Rajdhani', sans-serif;
     grid-template-columns: 50% 50%;
 	margin: 4em 17.5em 2em;
     color: var(--main-color);
+    background-image: url(/IMG/4c8fe6e3-44eb-4882-877f-74ba49241ded.png);
+    background-size: cover;
+    background-position: center center;
+    overflow: hidden;
+    z-index: 1;
+    position: relative;
+}
+
+#FormContainer::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: -1;
 }
 
 h1 {
@@ -196,17 +212,6 @@ h1 {
     font-size: 2.1rem;
     font-weight: 800;
     grid-column: 1/span 2;
-}
-
-.ImgContainer img {
-	width: 465px;
-	height: 465px;
-	position: relative;
-	top: 17em;
-	border-radius:20px;
-	box-shadow: 0px 0px 20px rgba(78, 78, 78, 0.9);
-	filter: brightness(80%);
-
 }
 
 .form-control {

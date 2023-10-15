@@ -490,13 +490,12 @@ border-bottom-right-radius: 20px;
   .speacker-and-menu-container2,
   .speacker-and-menu-container3 {
     grid-column: 1 / span 1;
-    margin: 0 auto;
+    margin: 1em auto;
 
   }
   .second-day-events {
     grid-column: 1 / span 1;
     flex-direction: column;
-   
   }
   
   .speacker-and-menu-container2 {

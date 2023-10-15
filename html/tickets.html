@@ -110,10 +110,6 @@
 <hr>
 
 <div id="FormContainer">
-	<div class="ImgContainer">
-<img src="/IMG/4c8fe6e3-44eb-4882-877f-74ba49241ded.png" alt="">
-
-	</div>
 	
 	<form id="Form">
 		<h1 id="FormHeading">Sign Up</h1>
@@ -147,22 +143,30 @@
 				<label>Phone No:</label><input type="pattern" placeholder="123-456-789">
 			</li>
 		</div>
-		<div class="dates">
-			<p>
-				<label for="start">Specific day to join</label>
-<input type="date" id="start" name="trip-start" value="2023-10-20" min="2023-10-20" max="2023-10-22" />
-			</p>
-			
-		</div>
+	
 
 		<div>
 			<h2>Choose all day's at the conference</h2>
-			<label>All days</label>
+			<label>All days at the conference</label>
 		  
 			<div>
 			  <input type="radio" id="alldays" name="alldays" value="alldays" checked />
+              <label>Specific date's at the conference</label>
+		  
+              <div>
+                <input type="radio" id="alldays" name="alldays" value="alldays" checked />
+          
+              </div>
 		
 			</div>
+
+            <div class="dates">
+                <p>
+                    <label for="start">Specific date's to join the conference</label>
+    <input type="date" id="start" name="trip-start" value="2023-10-20" min="2023-10-20" max="2023-10-22" />
+                </p>
+                
+            </div>
 			
 		  </div>
 		<li><h2>Food prefernces:</h2>
