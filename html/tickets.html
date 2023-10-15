@@ -43,7 +43,7 @@
        
 			</div>   
 			     <div class="buttons">
-				<a class="remote-btn" href="#wrapper"> Get Remote pass</></a>
+				<a class="remote-btn" href="#FormContainer"> Get Remote pass</></a>
 			</div>
             </div>
 		
@@ -59,7 +59,7 @@
                 </ul>
 			</div>
 		<div class="buttons">
-					<a class="basic-btn" href="#wrapper">  Get Basic pass</a>
+					<a class="basic-btn" href="#FormContainer">  Get Basic pass</a>
 				</div>
 			</div>
 			<div class="content">
@@ -74,7 +74,7 @@
 					</ul>
 				</div>
 			<div class="buttons">
-						<a class="basic-btn" href="#wrapper">  Get Basic pass</a>
+						<a class="basic-btn" href="#FormContainer">  Get Basic pass</a>
 					</div>
 				</div>
 </div>
@@ -140,18 +140,23 @@
 				<label>Phone No:</label><input type="pattern" placeholder="123-456-789">
 			</li>
 		</div>
-		<div class="password">
-			<li><label>Password:</label> <input type="password"></li>
-			<li><label>Confirm Password:</label> <input type="password"></li>
+		<div class="dates">
+			<p>
+				<label for="start">Specific day to join</label>
+<input type="date" id="start" name="trip-start" value="2023-10-20" min="2023-10-20" max="2023-10-22" />
+			</p>
+			
 		</div>
-		<li class="Subscribe">
-			<div class="CheckBoxCont" onclick="ToggleCheckBox(this)" data-status="true">
-				<div class="tick">
-					<hr class="Tickline1">
-					<hr class="Tickline2">
-				</div>
-			</div><label for="subscribe">I want to get updates.</label>
-		</li>
+	
+		<div>
+			
+			<label>All days</label>
+		  
+			<div>
+			  <input type="radio" id="alldays" name="alldays" value="alldays" checked />
+		
+			</div>
+		  </div>
 		<button type="submit">Sign Up</button>
 	</form>
 

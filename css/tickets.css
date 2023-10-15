@@ -109,7 +109,7 @@ text-decoration: none;
 	grid-template-columns: 1fr 1fr 1fr;
 	gap: 20px;
 	margin-top: 0;
-   margin-left: 7em;
+   margin-left: 10em;
    margin-bottom: 8em;
     color:#F2EFE9;
 
@@ -119,7 +119,7 @@ text-decoration: none;
     grid-column: span 3; 
     text-align: center; 
 	font-size: 2em;
-	margin-right:3em;
+	margin-right:5em;
 	
 }
 
@@ -167,9 +167,6 @@ position: relative;
 	text-align: center;
 }
 
-
-
-
 :root {
    
     --background-color: #8c3fe2
@@ -204,7 +201,7 @@ h1 {
 .ImgContainer {
     overflow: hidden;
     border-radius: 10px;
-  background:url(https://wallpapercg.com/media/ts_sq/7898.webp);
+  background:url(/IMG/4c8fe6e3-44eb-4882-877f-74ba49241ded.png);
   background-size:100% 100%;
 }
 
@@ -274,70 +271,18 @@ form .Phone input {
     width: 100%;
 }
 
+.radio {
+	display:flex;
+	flex-direction: column;
+	justify-content: flex-start;
+
+}
+
 .Subscribe {
     display: flex;
     flex-direction: row;
     padding: 10px;
     align-items: center;
-}
-
-.CheckBoxCont {
-    width: 25px;
-    border-radius: 5px;
-    height: 25px;
-    position: relative;
-    border: 1px solid var(--main-color);
-    transition-duration: 0.2s;
-}
-
-.CheckBoxCont:hover {
-    background-color: var(--main-color);
-}
-
-.CheckBoxCont:hover .Tickline2 {
-    background-color: white;
-}
-
-.CheckBoxCont:hover .Tickline1 {
-    background-color: white;
-}
-
-
-.Tickline2,
-.Tickline1 {
-
-    background-color: var(--main-color);
-    border-radius: 20px;
-    height: 3px;
-    position: absolute;
-    width: 20px;
-    transition-duration: 0.3s;
-    border: none;
-    ;
-
-}
-
-.Tickline1 {
-    rotate: -45deg;
-    top: 10px;
-    left: 5px;
-    opacity: 0;
-    width: 18px;
-    animation: 1s car linear infinite;
-}
-
-.Tickline2 {
-    rotate: 50deg;
-    top: 12px;
-    width: 8px;
-    opacity: 0;
-    left: 2px;
-}
-
-.Subscribe label {
-    padding: 10px;
-    width: fit-content;
-
 }
 
 form button {
@@ -350,6 +295,11 @@ form button {
     border: none;
     cursor: pointer;
     margin: auto;
+}
+
+#alldays {
+	position: relative;
+	right: 13em;
 }
 
 @media (max-width:800px) {
