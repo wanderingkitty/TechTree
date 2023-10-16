@@ -1,7 +1,7 @@
 body {
 	margin: 0;
 	padding: 0;
-	background-color:#F2EFE9;
+	background-color:#252627;
 font-family: 'Rajdhani', sans-serif;
 }
 
@@ -86,11 +86,12 @@ hr {
 	  line-height: 10px;
   }
   
-  .text {
+  .email {
 	width: 100%;
 	height: 70px;
+	text-align: center;
 	background-color:#f2efe9da;
-	border-radius: 40px;
+	border-radius: 10px;
 	position: relative;
 	margin-top: 40px;
   }
@@ -98,7 +99,6 @@ hr {
 	input {
 	  width: 100%;
 	  height: 70px;
-	  border-radius: 40px;
 	  border: 0;
 	  background: none;
 	  padding: 0 30px;
@@ -110,9 +110,9 @@ hr {
 	.btn {
 	  background-color:rgba(231, 231, 231, 0.9);
 	  border: 0;
-	  width: 90px;
+	  width: 60px;
 	  height: 50px;
-	  border-radius: 50%;
+	  border-radius: 10px;
 	  position: absolute;
 	  right: 10px;
 	  top: 10px;

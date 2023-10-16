@@ -182,8 +182,11 @@ font-family: 'Rajdhani', sans-serif;
     padding: 0.5em;
     width: 965px;
     height: 150vh;
-    display: grid;
-    grid-template-columns: 50% 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    /* grid-teplate-columns: 50% 50%; */
 	margin: 4em 17.5em 2em;
     color: var(--main-color);
     background-image: url(/IMG/4c8fe6e3-44eb-4882-877f-74ba49241ded.png);
@@ -283,7 +286,7 @@ form select {
 
 }
 
-.Name, .Phone {
+.Name, .ticket {
     display: grid;
     grid-template-areas:
         "firstName lastName"
@@ -314,17 +317,7 @@ form label {
     grid-area: firstName; 
 }
 
-form input {
-    padding: 10px;
-    border-radius: 8px;
-    border: none;
-    background-color:var(--second-color);
-    outline: none;
-    color: var(--main-color);
-    margin-bottom: 10px;
-}
-
-form .Phone input {
+form .ticket input {
     padding: 10px; 
     border-radius: 8px;
     border: none;
@@ -336,6 +329,7 @@ form .Phone input {
     grid-area: phone; 
 }
 
+
 form button {
     width: fit-content;
     border-radius: 5px;
@@ -344,7 +338,10 @@ form button {
     color: var(--second-color);
     background-color: var(--main-color);
     border: none;
-    margin: 2em auto;
+    margin: 2em;
+    position: relative;
+    top: 3em;
+    right: 9em;
 }
 
 form button:hover {
@@ -352,16 +349,14 @@ form button:hover {
     background-color: var(--second-color);
     color:#252627;
 }
-/* Apply red border to input, select, and textarea with 'required' attribute */
+
 form input:invalid, form select:invalid, form textarea:invalid, form select[required], form input[required] {
     border: 1px solid red;
 }
 
-/* Remove the red border when the input is valid */
 form input:valid, form select:valid, form textarea:valid, form select[required]:valid, form input[required]:valid {
-    border: 1px solid var(--main-color); /* Replace with your preferred valid state style */
+    border: 1px solid var(--main-color);
 }
-
 
 @media screen and (max-width: 1200px)  {
 	.tickets-container {
@@ -413,10 +408,18 @@ margin: 2em auto;
 	   grid-template-columns: 1fr;
 	   margin: 0 auto;
        width: 400px;
+       height: 180vh;
     }
 
     .Name,
-    .Phone{
+    .ticket{
         display: block;
+    }
+
+    form button {
+        position: relative;
+        margin: 0 auto;
+        left: 0;
+        right: 0;
     }
 }
