@@ -70,7 +70,7 @@ hr {
 	align-items:center;
 	justify-content: center;
 	width: 260px;
-	height: 260px;
+	/* height: 260px; */
 	background-color:#eaeaea6e;
 	border-radius:20px;
 }
