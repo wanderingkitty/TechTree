@@ -1,0 +1,58 @@
+body {
+	margin: 0;
+	padding: 0;
+	font-family: 'Rajdhani', sans-serif;
+background-color:#252627;
+color:#F2EFE9;
+}
+
+.paid {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items:center ;
+	margin: 5em auto;
+	border-radius:20px;
+	box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.9);
+	width:60vw;
+	height: 40vh; 
+	background-size: 100% 200%, 200% 200%, cover; 
+background-repeat: no-repeat;
+background-position: center center;
+font-size: 1.5em;
+
+}
+
+.paid h1 {
+	position: absolute;
+}
+
+.paid::before {
+	content: "";
+	width:60vw;
+	height: 40vh; 
+	background-image: url(/IMG/1.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	filter: brightness(50%); /* Adjust the brightness value to make it darker or lighter */
+	z-index: -1;
+	  box-shadow: 0px 0px 20px rgba(169, 169, 169, 0.9);
+	  border-radius:20px;
+}
+
+
+footer {
+	display: flex;
+	justify-content: center;
+	align-items:center;
+	background-color:#161617;
+    color: #F2EFE9; 
+    padding: 20px; 
+    text-align: center; 
+	position: absolute;
+	bottom: 0;
+    left: 0;
+    width: 100%;
+	margin-top:calc(5% + 60px);
+
+}

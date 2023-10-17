@@ -20,23 +20,30 @@ hr {
 .tickets-container {
 	display: grid;
     grid-template-columns: repeat(3, 1fr);
-	margin: 4em;
+	margin: 7em;
 	gap: 10px;
 	text-align: left;
 	font-size: 1.3em;
 	align-items:start;
 }
 
-  .content {
+.content {
     background-color: #252627;
     padding: 20px;
     border-radius: 5px;
     box-shadow: 0px 0px 20px rgba(73, 73, 73, 0.9);
     text-align: left;
-	display: flex;
-	flex-direction: column;
-	height: 65vh;
+    display: flex;
+    flex-direction: column;
+    height: 65vh;
+    transition: transform 0.3s, box-shadow 0.3s; /* Add smooth transitions for transform and box-shadow */
 }
+
+.content:hover {
+    transform: translateY(-5px); 
+    box-shadow: 0px 0px 30px rgba(73, 73, 73, 0.9);
+}
+
 
 .buttons {
 	display: flex;
