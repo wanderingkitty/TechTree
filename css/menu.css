@@ -22,12 +22,10 @@ color:#161617;
 border-radius:20px;
 border:none;
 display: block;
-position: relative;
-left:34.5em;
-bottom:2em;
 text-align: center;
 width: 90px;
 padding: 1em;
+margin: 0 auto;
 font-size: 1.3em;
 }
 
@@ -96,13 +94,13 @@ justify-content: space-around;
 	grid-column: 3;
 	font-size: 1.3em;
 	text-align: center;
-
 	
 	}
 
 	.welcome-container h1 {
 		position: relative;
 		top: 8em;
+		align-items:center;
 		line-height: 1em;
 	
 	}
@@ -203,8 +201,6 @@ justify-content: space-around;
 		}
 
 		.book-now {
-			margin: 0;
-			left: 8.5em;
-			right: 0;
+			margin: 0 auto;
 		}
 	  }

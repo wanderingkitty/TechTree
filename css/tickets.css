@@ -10,10 +10,10 @@ hr {
 	width: 60vw;
 	margin: 20px auto;
 	display: block;
-	color: #333; /* Color of the rule */
-	background-color: #817983b5; /* Background color of the rule */
-	height: 2px; /* Height or thickness of the rule */
-	border: none; /* Remove any border */
+	color: #333; 
+	background-color: #817983b5; 
+	height: 2px; 
+	border: none; 
 	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
   }
 
@@ -36,7 +36,7 @@ hr {
     display: flex;
     flex-direction: column;
     height: 80vh;
-    transition: transform 0.3s, box-shadow 0.3s; /* Add smooth transitions for transform and box-shadow */
+    transition: transform 0.3s, box-shadow 0.3s;
 }
 
 .content:hover {
@@ -218,6 +218,21 @@ font-family: 'Rajdhani', sans-serif;
     z-index: -1;
 }
 
+.form-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: 0 auto;
+    width: 400px;
+    height: 180vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* ... Your existing styles ... */
+
+
 h1 {
     padding: 20px;
     color: var(--main-color);
@@ -348,10 +363,9 @@ form button {
     color: var(--second-color);
     background-color: var(--main-color);
     border: none;
-    margin: 2em;
-    position: relative;
-    top: 3em;
-    right: 9em;
+    text-align: center; 
+    display: block; 
+    margin: 2em auto; 
 }
 
 form button:hover {
@@ -429,9 +443,8 @@ margin: 2em auto;
     }
 
     form button {
-        position: relative;
-        margin: 0 auto;
-        left: 0;
-        right: 0;
+        text-align: center; 
+        display: block; 
+        margin: 2em auto; 
     }
 }
