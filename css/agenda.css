@@ -398,7 +398,7 @@ border-bottom-right-radius: 20px;
 	text-decoration: underline rgba(118, 118, 118, 0.449);
 }
 
-@media screen and (max-width: 1200px)  {
+@media screen and (max-width: 1300px)  {
 
   .date-container {
     padding: 2em;

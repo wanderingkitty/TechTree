@@ -20,7 +20,7 @@ hr {
 .tickets-container {
 	display: grid;
     grid-template-columns: repeat(3, 1fr);
-	margin: 7em;
+	margin: 5em;
 	gap: 10px;
 	text-align: left;
 	font-size: 1.3em;

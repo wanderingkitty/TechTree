@@ -111,7 +111,7 @@ hr {
 	grid-row: 1;
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1300px) {
 
 .firts-speaker-container {
 	grid-template-columns: 1fr;
@@ -126,7 +126,7 @@ hr {
   
 	.day-one-speakers,
 	.day-two-speakers {
-		margin: 0;
+		margin: 0 auto;
 	  display: flex;
 	  flex-direction: column; /* Stack elements vertically */
 	  align-items: center; /* Center the elements */
@@ -143,6 +143,10 @@ hr {
 	.ameca, .mark, .reed, .tim, .jeff {
 		display: flex;
 		flex-direction: column;
+	}
+
+	h1 {
+		line-height: 1.5em;
 	}
   
   }
