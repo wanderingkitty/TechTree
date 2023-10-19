@@ -245,7 +245,7 @@ h1 {
     backdrop-filter: blur(10px);
 font-family: 'Rajdhani', sans-serif;
     border: 2px solid #ffffff6d;
-    width: 365px;
+    width: 100%;
     border-radius: 10px;
     box-shadow: 3px 3px 11px 1.5px #0000002b;
     padding: 10px;
@@ -258,8 +258,6 @@ form {
     flex-direction: column;
     justify-content: center;
     padding: 10px;
-	width: 40vw;
-
 }
 
 .Name {
@@ -354,7 +352,6 @@ form .ticket input {
     grid-area: phone; 
 }
 
-
 form button {
     width: fit-content;
     border-radius: 5px;
@@ -448,7 +445,8 @@ margin: 2em auto;
         margin: 2em auto; 
     }
 
-    input {
+    form input {
         width: 100%;
+        padding: 0.5em;
     }
 }
