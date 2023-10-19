@@ -45,7 +45,7 @@
        
 			</div>   
 			     <div class="buttons">
-				<a class="remote-btn" href="#FormContainer"> Get Remote pass</></a>
+				<a class="remote-btn" href="#FormContainer"> Get Remote pass</a>
 			</div>
             </div>
 		
@@ -117,27 +117,30 @@
 	
 	<form action="/html/" id="Form">
 		<h1 id="FormHeading">Book you ticket</h1>
-		<div class="Name">
+	<ul>
 			<li><label>First Name:</label>
 				<input type="text" placeholder="John" required>
 			</li>
 			<li><label>Last Name:</label>
 				<input type="text" placeholder="Doe" required>
 			</li>
-		</div>
+		</ul>
 
 		<div class="email">
+			<ul>
 		<li>
 			<label>Email:</label>
 			<input type="email" placeholder="johndoe123@gmail.com"  required>
 		</li>
+		</ul>
 	</div>
-		<div class="adress">
-			<label for="street-address">Street address</label>
-			<input type="text" id="street-address" name="street-address" autocomplete="street-address" required enterkeyhint="next"></input>
-		  
+	<div>
+		<input class="adress">
+			<label for="address">Street address</label>
+			<input type="text" id="address" name="address"/>
 		  </div>
-		<div class="ticket" required>
+		<div class="ticket">
+			<ul>
 			<li><label>Ticket version:</label>
 				<select>
 				<option>Choose an option</option>
@@ -145,10 +148,13 @@
 					<option>Basic pass</option>
 					<option>Premium pass</option>
 
-					<select>
+				</select>
+			</ul>
+			<ul>
 			<li>
-				<label>Phone No:</label><input type="pattern" placeholder="123-456-789" required>
+				<label>Phone No:</label><input type="number" placeholder="123-456-789" required>
 			</li>
+		</ul>
 		</div>		
 
 		<h2>Choose specific day's to join the conference</h2>
@@ -176,17 +182,18 @@
 				All Days at the conference
 			</label>
 		</div>
-		
-		<li><h2>Food prefernces:</h2>
-			<select required>
-				<option>Choose an option</option >
-				<option>Meat</option>
-				<option>Fish</option>
-				<option>Vegetarian</option>
-
-				<select>
-		<li>
-			<label for="name"><h2>To ensure your safety and comfort, please share any known allergies.</h2></label>
+		<ul>
+			<li><h2>Food preferences:</h2>
+				<select required>
+					<option value="" disabled selected>Choose an option</option>
+					<option value="meat">Meat</option>
+					<option value="fish">Fish</option>
+					<option value="vegetarian">Vegetarian</option>
+				</select>
+			</li>
+		</ul>
+		<h2>To ensure your safety and comfort, please share any known allergies.</h2>
+	
 
 			<textarea class="form-control" rows="5" placeholder="Write about your allergies here" name="message" required></textarea>
 			<br>
