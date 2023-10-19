@@ -121,7 +121,6 @@ hr {
    margin-left: 10em;
    margin-bottom: 8em;
     color:#F2EFE9;
-
 }
 
 .sponsors-title {
@@ -129,14 +128,13 @@ hr {
     text-align: center; 
 	font-size: 2em;
 	margin-right:5em;
-	
 }
 
 .overlay {
 	width: 300px;
 	height: 300px;
 	border-radius: 10%;
-	position: absolute;
+    position: absolute;
 	top: 0;
 	bottom: 0;
 	left: 0;
@@ -191,7 +189,6 @@ font-family: 'Rajdhani', sans-serif;
     box-shadow: 3px 3px 11px 1.5px #0000002b;
     padding: 0.5em;
     width: 965px;
-    height: 150vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -222,8 +219,6 @@ font-family: 'Rajdhani', sans-serif;
     display: grid;
     grid-template-columns: 1fr;
     margin: 0 auto;
-    width: 400px;
-    height: 180vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -282,7 +277,7 @@ form select {
     background-color: var(--second-color);
     outline: none;
     color: var(--main-color);
-    margin-bottom: 10px;
+    width: 100%;
 }
 
 form input:focus,
@@ -297,11 +292,6 @@ form .Phone {
     grid-template-columns: 35% 65%;
 }
 
-form select {
-    width: 100%;
-}
-
-
 .radio {
 	display:flex;
 	flex-direction: column;
@@ -315,13 +305,7 @@ form select {
         "firstName lastName"
         "ticketVersion phone";
     gap: 20px;
-    
 }
-
-.Name input {
-    width: 100%;
-}
-
 .email input, .adress input{
     width: 100%;
 }
@@ -334,10 +318,21 @@ form li {
 }
 
 form label {
-    font-size: 1em;
+    font-size: 1.5em;
 	padding-right: 5px;
     color: var(--main-color);
     grid-area: firstName; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+}
+
+div h2 {
+    display: flex;
+    margin: 0 auto;
+    align-items:center;
+    justify-content: center;
 }
 
 form .ticket input {
@@ -378,6 +373,7 @@ form input:invalid, form select:invalid, form textarea:invalid, form select[requ
 form input:valid, form select:valid, form textarea:valid, form select[required]:valid, form input[required]:valid {
     border: 1px solid var(--main-color);
 }
+
 
 @media screen and (max-width: 1300px)  {
 	.tickets-container {
@@ -427,26 +423,51 @@ margin: 2em auto;
 	  }
 
 	  #FormContainer {
-       display: grid;
-	   grid-template-columns: 1fr;
+       display: flex;
+	  flex-direction: column;
+      align-items:center;
+      justify-content: center;
 	   margin: 0 auto;
+     padding-right: 4em;
        width: 400px;
-       height: 180vh;
+       height: 190vh;
     }
 
-    .Name,
-    .ticket{
-        display: block;
+    .form-container {
+        margin: 0 auto;
+        padding: 0;
+    }
+
+    .form-container h1 {
+        margin: 0 auto;
+        padding: 0;
+        margin-left: 3.5em;
+    }
+
+    .form-container h2 {
+        margin: 0 auto;
+        padding: 0;
     }
 
     form button {
         text-align: center; 
         display: block; 
-        margin: 2em auto; 
+        margin: 0 auto; 
     }
 
     form input {
         width: 100%;
-        padding: 0.5em;
+        margin: 0 auto;
+    }
+
+    form label {
+        margin: 0 auto;
+        
+    }
+
+    .form-control {
+        width: 100%;
+        margin: 0 auto;
+        padding: 0;
     }
 }

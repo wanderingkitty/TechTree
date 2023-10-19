@@ -135,53 +135,59 @@
 		</ul>
 	</div>
 	<div>
-		<input class="adress">
+		<ul>
+<li>
 			<label for="address">Street address</label>
-			<input type="text" id="address" name="address">
+			<input type="text" id="address" name="address" required>
+		</li>
+		</ul>
 		  </div>
 		<div class="ticket">
 			<ul>
-			<li><label>Ticket version:</label>
-				<select>
-				<option>Choose an option</option>
-					<option>Remote pass</option>
-					<option>Basic pass</option>
-					<option>Premium pass</option>
-
+			<li><h2>Ticket version:</h2>
+				<select required>
+					<option value="" disabled selected>Choose an option</option>
+					<option value="meat">Remote pass</option>
+					<option value="fish">Basic pass</option>
+					<option value="vegetarian">Premium pass</option>
 				</select>
+			</li>
 			</ul>
+
 			<ul>
 			<li>
-				<label>Phone No:</label><input type="number" placeholder="123-456-789" required>
+				<h2>Phone Number:</h2><input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required />
 			</li>
 		</ul>
 		</div>		
 
-		<h2>Choose specific day's to join the conference</h2>
+	
 		<div>
-			<label for="easy-1">
-				<input id="easy-1" type="checkbox" >
+			<h2>Choose specific day's to join the conference:</h2>
+			<label>
 				20 October
+				<input type="checkbox" id="easy-1">
 			</label>
 		</div>
 		<div>
-			<label for="easy-2">
-				<input id="easy-2" type="checkbox" >
+			<label>
 				21 October
+				<input type="checkbox" id="easy-2">
 			</label>
 		</div>
 		<div>
-			<label for="easy-3">
-				<input id="easy-3" type="checkbox" >
+			<label>
 				22 October
+				<input type="checkbox" id="easy-3">
 			</label>
 		</div>
 		<div>
-			<label for="easy-4">
-				<input id="easy-4" type="checkbox" >
+			<label>
 				All Days at the conference
+				<input type="checkbox" id="easy-4">
 			</label>
 		</div>
+		
 		<ul>
 			<li><h2>Food preferences:</h2>
 				<select required>
@@ -192,9 +198,10 @@
 				</select>
 			</li>
 		</ul>
+		<div>
 		<h2>To ensure your safety and comfort, please share any known allergies.</h2>
+	</div>
 	
-
 			<textarea class="form-control" rows="5" placeholder="Write about your allergies here" name="message" required></textarea>
 			<br>
 		<button type="submit">Book now</button>
