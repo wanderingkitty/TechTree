@@ -210,7 +210,7 @@ hr {
   background-color:rgba(255, 255, 255, 0.645);
   border-top-left-radius:20px;
   border-top-right-radius:20px;
-height: 5em;
+  height: 5em;
 width: 13.5em;
 text-align: center;
 color:#252627;
@@ -477,12 +477,17 @@ border-bottom-right-radius: 20px;
   .second-day-events {
     grid-column: 1 / span 1;
     flex-direction: column;
+    margin-top: 14em;
   }
   
   .speacker-and-menu-container2 {
     grid-column: 1 / span 1;
     margin: 0 auto;
     order: 1;
+  }
+
+  hr {
+    display: none;
   }
 
 }
