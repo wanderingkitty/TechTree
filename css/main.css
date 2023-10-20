@@ -208,24 +208,6 @@ a {
     color:#F2EFE9;
 }
 
-.circle {
-  width: 25px;
-  height: 25px;
-  border: 2px solid #F2EFE9;
-  border-radius: 50%; /* To create a circle */
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.arrow {
-  width: 0;
-  height: 0;
-  border-top: 7px solid transparent; /* Triangle pointing to the right */
-  border-bottom: 7px solid transparent;
-  border-left: 10px solid #F2EFE9; /* Adjust the size as needed */
-}
-
 .learn-arrow {
 	position: relative;
 	bottom: 10.2em;
@@ -400,12 +382,6 @@ position: relative;
   
 	.media-profile:hover .overlay {
 	  opacity: 1;
-	}
-  
-	.learn-arrow {
-	  position: relative;
-	  bottom: 0;
-	  left: 0;
 	}
   }
 
